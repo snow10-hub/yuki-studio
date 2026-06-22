@@ -1,0 +1,672 @@
+/* =========================
+  Hero
+========================= */
+
+.hero {
+    padding: 0;
+    margin-bottom: var(--section-space-pc);
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    position: relative;
+}
+
+.hero-inner {
+    width: min(100%, var(--container-width));
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    height: 500px;
+    padding: 0 var(--page-padding-pc);
+}
+
+.hero-visual {
+    position: absolute;
+    inset: 0;
+}
+
+.hero-visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right center;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    width: min(520px, 100%);
+}
+
+.hero-content h1 {
+    font-size: clamp(1.5rem, 3vw, 3rem);
+}
+
+.hero-label {
+    margin-bottom: 18px;
+    color: var(--color-main);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: var(--tracking-wide);
+}
+
+.hero-title {
+    color: var(--color-text);
+    font-family: var(--font-logo);
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: var(--tracking-wide);
+}
+
+.hero-lead {
+    margin-top: 24px;
+    color: var(--color-text-soft);
+    font-size: 1.05rem;
+    line-height: 2;
+}
+
+.hero-actions {
+    margin-top: 34px;
+}
+
+.scroll-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 28px;
+    color: var(--color-text-light);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: var(--tracking-wide);
+}
+
+.scroll-icon {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
+/* =========================
+  About
+========================= */
+
+.about-layout {
+    display: grid;
+    /* 💡【大修正】比率を「0.9fr 1.4fr」から「1fr 2.2fr」に変更！
+       左の文字エリアをシュッと引き締め、右のカードエリアをドカンと主役にする */
+    grid-template-columns: 1fr 2.2fr;
+    align-items: center;
+    gap: 60px;
+    /* 💡左と右の間のすき間を、少しだけ広げて開放感を出す */
+}
+
+.section-heading {
+    position: relative;
+}
+
+.section-text {
+    z-index: 3;
+}
+
+.section-heading .button {
+    position: relative;
+    z-index: 2;
+    margin-top: 28px;
+}
+
+.about-dog {
+    z-index: 1;
+    pointer-events: none;
+    position: absolute;
+    bottom: -20px;
+    right: -40px;
+    width: 180px;
+    margin: 0;
+}
+
+.service-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--card-gap);
+}
+
+.service-card {
+    padding: 40px 24px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    background: rgba(255, 253, 248, 0.78);
+    box-shadow: var(--shadow-card);
+    text-align: center;
+}
+
+.service-icon {
+    display: grid;
+    place-items: center;
+    width: 72px;
+    height: 72px;
+    margin: 0 auto 24px;
+    border-radius: 50%;
+    background: var(--color-bg-soft);
+    opacity: .8;
+}
+
+.service-icon img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.service-card h3 {
+    margin-bottom: 16px;
+    color: var(--color-text);
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.service-card p {
+    color: var(--color-text-soft);
+    font-size: 0.9rem;
+    line-height: 1.7;
+    text-align: center;
+}
+
+/* =========================
+  Works
+========================= */
+.works-list {
+    display: grid;
+    /* 💡画像通りの3カラム（3つ並び）の土台を作る */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    /* カード同士のすき間 */
+}
+
+.work-card {
+    background: var(--color-surface-strong);
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    box-shadow: var(--shadow-card);
+    transition: transform var(--transition), box-shadow var(--transition);
+}
+
+/* 💡ホバーした時に、カードが上にふわっと浮き上がるオシャレ演出 */
+.work-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-soft);
+}
+
+/* 画像エリア（ここを基準にして文字を画像の上に浮かせる） */
+.work-image {
+    position: relative;
+    display: block;
+    width: 100%;
+    /* 💡追加 */
+    aspect-ratio: 16 / 10;
+    /* 画像の比率を綺麗に固定 */
+    overflow: hidden;
+}
+
+.work-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition);
+}
+
+/* 💡ホバーした時に、画像だけが奥にじわっと拡大する高級感のあるエフェクト */
+.work-card:hover .work-image img {
+    transform: scale(1.04);
+}
+
+/* 【最重要】画像の上に載る文字エリア（下から上に暗くなるグラデーション） */
+.work-image-text {
+    position: absolute;
+    inset: 0;
+    /* 下側にしっかり暗いマスクを敷いて、白い文字をハッキリ見せる */
+    background: linear-gradient(to top,
+            rgba(30, 20, 15, 0.85) 0%,
+            rgba(30, 20, 15, 0.3) 50%,
+            rgba(30, 20, 15, 0) 100%);
+    padding: 24px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* 文字を画像の「左下」に密着させる */
+    color: #ffffff;
+}
+
+.work-title-on-image {
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: var(--tracking-wide);
+    margin-bottom: 4px;
+}
+
+.work-image-text p:not(.work-title-on-image) {
+    font-size: 0.8rem;
+    opacity: 0.85;
+    margin-bottom: 12px;
+}
+
+/* タグ（HTML / CSS / JavaScript）のスタイリング */
+.work-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.work-tags span {
+    background: #ffffff;
+    color: var(--color-text);
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 4px;
+}
+
+/* カード下部のテキストエリア（2行のスッキリ配置） */
+.work-body {
+    padding: 16px 20px 20px;
+}
+
+.work-body h3 {
+    font-size: 0.95rem;
+    color: var(--color-text);
+    margin-bottom: 4px;
+    font-weight: 700;
+}
+
+.work-meta {
+    font-size: 0.78rem;
+    color: var(--color-text-light);
+}
+
+/* 💡デザイン画像には「長い説明文」が載っていないので、
+   HTML側の長文をCSSで自動的に非表示にしてデザインを完コピするお守り */
+.work-body p:not(.work-meta) {
+    display: none;
+}
+
+.work-links {
+    margin-top: 14px;
+}
+
+.work-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    min-height: 36px;
+    padding: 0 14px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-pill);
+    background: var(--color-surface);
+    color: var(--color-main-dark);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+}
+
+.work-link:hover {
+    border-color: var(--color-main);
+    background: var(--color-bg-soft);
+}
+
+/* =========================
+  Experience (活動・実務経験)
+========================= */
+/* タイトル下のリード文 */
+.section-lead {
+    font-size: 0.95rem;
+    color: var(--color-text-light);
+    margin-bottom: 40px;
+    /* 見出しとカードの間の心地いい距離 */
+    letter-spacing: var(--tracking-wide);
+}
+
+.experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    /* カード同士の間隔 */
+}
+
+/* カード全体の土台 */
+.experience-card {
+    background: var(--color-surface-strong);
+    border-radius: var(--radius-sm);
+    padding: 40px;
+    box-shadow: var(--shadow-card);
+    display: flex;
+    gap: 40px;
+    /* 左のアイコンと右の文章の間のすき間 */
+    align-items: center;
+    /* 縦方向を中央揃えに */
+    position: relative;
+    /* 右下の肉球の基準点 */
+    overflow: hidden;
+    transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.experience-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-soft);
+}
+
+/* 左側：丸いアイコン背景 */
+.experience-icon-wrap {
+    width: 120px;
+    height: 120px;
+    background: var(--color-shadow);
+    /* 優しい薄ベージュ */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    /* 横幅が絶対に潰れないように固定 */
+}
+
+.experience-icon {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+/* 右側：文章エリア */
+.experience-body {
+    flex: 1;
+}
+
+.experience-body h3 {
+    font-size: 1.25rem;
+    color: var(--color-text);
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.experience-body p {
+    font-size: 0.92rem;
+    color: var(--color-text-light);
+    line-height: 1.75;
+    margin-bottom: 16px;
+}
+
+/* 下部：デザイン図通りの可愛いタグ */
+.experience-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.experience-tags span {
+    background: #f5ede0;
+    /* アイコン背景と同じ薄ベージュ */
+    color: #8c6a56;
+    /* セクションのラベルと同じ上品な茶色 */
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 6px 14px;
+    border-radius: 4px;
+}
+
+.experience-link {
+    margin-top: 40px;
+    text-align: center;
+}
+
+/* =========================
+  Skills (対応スキル)
+========================= */
+/* グループ全体を横並びにする */
+.skill-groups {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.skill-group {
+    flex: 1;
+    position: relative;
+    padding-left: 20px;
+}
+
+.skill-group-icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 8px;
+    /* アイコンと文字の間のすき間 */
+    object-fit: contain;
+}
+
+/* 💡【重要】グループの間の「縦線」を引く */
+.skill-group:not(:first-child)::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 5px;
+    bottom: 5px;
+    width: 1px;
+    background: #e0d8ce;
+    /* 薄いグレーのライン */
+}
+
+/* グループ見出し */
+.skill-group h3 {
+    font-weight: 600;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text);
+}
+
+/* タグのデザイン */
+.skill-tags {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skill-tags span {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+    border: 1px solid #e0d8ce;
+    /* 薄い枠線 */
+    border-radius: 4px;
+    color: var(--color-text);
+    background: transparent;
+}
+
+
+
+@media (max-width: 1024px) {
+
+    /* 1. 左右の横並びをやめて、上下2段に切り替える */
+    .about-layout {
+        grid-template-columns: 1fr;
+        gap: 60px;
+        /* 💡下のカードエリアとの間に、サモエドがひょっこりする空間を開ける */
+    }
+
+    /* 2. 【最重要】文章の間延びを完全に防ぐブロック */
+    .section-heading {
+        max-width: 400px;
+        /* 💡テキストが一番美しく見える横幅にガツンと制限！ */
+        margin: 0 auto;
+        /* 💡制限したブロックを画面の「真ん中」に上品に寄せる */
+        width: 100%;
+    }
+
+    /* 3. サモエドの位置をボタンの右下にガチッと永住させる */
+    .about-dog {
+        right: auto;
+        /* PC版の右基準を一度チャラにする（超重要） */
+        right: 10px;
+        /* 💡ボタン（相談する）のすぐ右横に位置を固定！ */
+        bottom: -12px;
+        /* 💡命令：ボタンの右下までグッと沈んでひょっこりしなさい */
+        width: 160px;
+        /* タブレット・スマホの画面に合わせて少しだけ小ぶりに */
+    }
+
+    .skill-groups {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        margin-top: 36px;
+    }
+
+    .skill-group {
+        padding: 28px 0;
+        padding-left: 0;
+    }
+
+    .skill-group:not(:first-child)::before {
+        display: none;
+    }
+
+    .skill-group:not(:last-child) {
+        border-bottom: 1px solid #e0d8ce;
+    }
+
+    .skill-group h3 {
+        justify-content: flex-start;
+        margin-bottom: 18px;
+    }
+
+    .skill-tags {
+        justify-content: flex-start;
+    }
+
+
+}
+
+@media (max-width: 767px) {
+    .hero {
+        padding: 48px var(--page-padding-sp) 64px;
+    }
+
+    .hero-card {
+        min-height: 560px;
+    }
+
+    .hero-content {
+        padding: 40px 24px;
+    }
+
+    .hero-content::before {
+        inset: 20px 16px;
+        border-radius: var(--radius-md);
+    }
+
+    .hero-title {
+        font-size: 2.4rem;
+    }
+
+    .hero-lead {
+        margin-top: 20px;
+        font-size: 0.98rem;
+    }
+
+    .hero-actions {
+        margin-top: 28px;
+    }
+
+    .section-heading {
+        max-width: 360px;
+        margin-inline: auto;
+    }
+
+    .about-layout {
+        gap: 60px;
+    }
+
+    .about-dog {
+        width: 150px;
+        margin-top: 24px;
+    }
+
+    .service-list {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .service-card {
+        padding: 24px;
+        max-width: 360px;
+        margin-inline: auto;
+    }
+
+
+    .service-icon {
+        width: 64px;
+        height: 64px;
+        margin-bottom: 20px;
+    }
+
+    .service-icon img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .works-list {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .work-card {
+        width: 100%;
+    }
+
+    .work-image {
+        aspect-ratio: 16 / 10;
+    }
+
+    .work-image-text {
+        padding: 22px 18px 18px;
+    }
+
+    .work-title-on-image {
+        font-size: 1.15rem;
+    }
+
+    .work-body {
+        padding: 18px 18px 20px;
+    }
+
+    .work-meta {
+        line-height: 1.8;
+    }
+
+    .work-link {
+        width: 100%;
+        min-height: 42px;
+    }
+
+    .experience-card {
+        grid-template-columns: 120px 1fr;
+        gap: 24px;
+    }
+
+    .experience-icon-wrap {
+        width: 70px;
+        height: 70px;
+    }
+
+    .experience-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .experience-card p {
+        font-weight: 500;
+        line-height: 1.9;
+        letter-spacing: 0.02em;
+    }
+
+
+}

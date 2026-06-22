@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuki Studio | Web & Writing Portfolio</title>
+    <meta name="description" content="Yuki Studioは、IT実務経験を土台に、情報設計・文章作成・Web制作・運用まで対応するポートフォリオサイトです。">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/work.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="#home" class="site-logo" aria-label="Yuki Studio トップへ">
+                <img src="images/logo-paw.svg" alt="肉球のロゴ" class="logo-mark">
+                <span class="logo-text">
+                    <span class="logo-main">Yuki Studio</span>
+                    <span class="logo-sub">Web &amp; Writing Portfolio</span>
+                </span>
+            </a>
+
+            <button class="menu-toggle" type="button" aria-label="メニューを開く" aria-expanded="false"
+                aria-controls="global-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="global-nav" aria-label="グローバルナビゲーション">
+                <ul class="nav-list">
+                    <li><a href="#home" class="is-current">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#works">Works</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- ヒーロー -->
+        <section class="work-detail-hero">
+            <div class="section-inner work-detail-hero-inner">
+                <div class="work-detail-hero-content">
+                    <p class="section-label">
+                        <img src="images/logo-paw.svg" alt="" class="section-logo-mark">
+                        WORK DETAIL
+                    </p>
+
+                    <h1>KOGE CINEMA NOTE</h1>
+
+                    <p class="work-detail-lead">
+                        映画を検索し、気になる作品を保存し、観た映画の記録を残せる映画管理サイトです。
+                    </p>
+
+                    <div class="work-detail-actions">
+                        <a href="#" class="button button-primary" target="_blank" rel="noopener">
+                            サイトを見る
+                            <span aria-hidden="true">→</span>
+                        </a>
+
+                        <a href="index.html#works" class="button button-outline">
+                            Worksへ戻る
+                        </a>
+                    </div>
+                </div>
+
+                <div class="work-detail-hero-visual">
+                    <img src="images/koge-cinema-note.webp" alt="KOGE CINEMA NOTEのサイト画面">
+                </div>
+            </div>
+        </section>
+
+        <!-- 本文エリア -->
+        <section class="section work-detail-section">
+            <div class="section-inner work-detail-layout">
+
+                <article class="work-detail-main">
+                    <section class="work-detail-block" id="background">
+                        <!-- 01 -->
+                        <div class="work-section-heading">
+                            <span class="work-section-number">01</span>
+                            <h2>制作背景・制作目的</h2>
+                        </div>
+
+                        <div class="work-background-layout">
+                            <div class="work-background-text">
+                                <p>
+                                    前作の静的サイト制作では、HTML / CSS / JavaScriptを使い、ページ構成やデザイン調整を中心に制作しました。
+                                    その経験を踏まえ、今回はReact / Next.js / TypeScriptを使い、APIから取得したデータを扱う動的なWebアプリケーションに挑戦しました。
+                                </p>
+
+                                <p>
+                                    KOGE CINEMA NOTEは、映画検索だけで終わるのではなく、お気に入り保存やレビュー投稿、関連映画表示などを通して、
+                                    ユーザーが映画との出会いや鑑賞後の記録を残せるサイトを目指して制作しました。
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 02 -->
+                    <section class="work-detail-block" id="overview">
+                        <div class="work-section-heading">
+                            <span class="work-section-number">02</span>
+                            <h2>制作概要</h2>
+                        </div>
+
+                        <div class="work-card-grid">
+                            <section class="work-point-card">
+                                <div class="work-card-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-target-icon lucide-target">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <circle cx="12" cy="12" r="6" />
+                                        <circle cx="12" cy="12" r="2" />
+                                    </svg>
+                                </div>
+                                <h3>制作目的</h3>
+                                <p>
+                                    映画を探し、観たい作品を保存し、観た記憶を残せる映画管理サイトとして制作しました。
+                                </p>
+                            </section>
+
+                            <section class="work-point-card">
+                                <div class="work-card-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-square-user-round-icon lucide-square-user-round">
+                                        <path d="M18 21a6 6 0 0 0-12 0" />
+                                        <circle cx="12" cy="11" r="4" />
+                                        <rect width="18" height="18" x="3" y="3" rx="2" />
+                                    </svg>
+                                </div>
+                                <h3>担当範囲</h3>
+                                <p>
+                                    企画・設計・デザイン・実装・API連携・レスポンシブ対応まで一貫して担当。
+                                </p>
+                            </section>
+
+                            <section class="work-point-card">
+                                <div class="work-card-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-wrench-icon lucide-wrench">
+                                        <path
+                                            d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z" />
+                                    </svg>
+                                </div>
+                                <h3>使用技術</h3>
+                                <p>
+                                    Next.js / React / TypeScript / Tailwind CSS / TMDB API / localStorage
+                                </p>
+                            </section>
+                        </div>
+                    </section>
+
+                    <!-- 03 -->
+                    <section class="work-detail-block" id="information-design">
+                        <div class="work-section-heading">
+                            <span class="work-section-number">03</span>
+                            <h2>主な機能</h2>
+                        </div>
+
+                        <div class="work-card-grid">
+                            <section class="work-point-card">
+                                <div>
+                                    <h3>映画検索・ジャンル検索</h3>
+                                    <p>
+                                        TMDB APIを利用し、キーワード検索やジャンル別表示に対応しました。
+                                        検索前には今週の話題作を表示し、最初の画面から実際の映画データに触れられる構成にしています。
+                                    </p>
+                                </div>
+
+                                <a href="images/cinema-search.webp" class="work-card-thumb js-lightbox">
+                                    <img src="images/cinema-search.webp" alt="映画検索・ジャンル検索の画面">
+                                </a>
+                            </section>
+
+                            <section class="work-point-card">
+                                <div>
+                                    <h3>My List保存</h3>
+                                    <p>
+                                        気になる映画をMy Listに保存できるようにしました。
+                                        localStorageを使い、リロード後も保存状態を維持できる構成にしています。
+                                    </p>
+                                </div>
+
+                                <a href="images/cinema-mylist.webp" class="work-card-thumb js-lightbox">
+                                    <img src="images/cinema-mylist.webp" alt="My List保存機能の画面">
+                                </a>
+                            </section>
+
+                            <section class="work-point-card">
+                                <div>
+                                    <h3>レビュー投稿・記録</h3>
+                                    <p>
+                                        観た映画の感想を残せるように、レビュー本文、星評価、ネタバレ非表示、評価分布グラフを実装しました。
+                                        映画を探すだけでなく、観た記憶を残せる体験を意識しています。
+                                    </p>
+                                </div>
+
+                                <a href="images/cinema-review.webp" class="work-card-thumb js-lightbox">
+                                    <img src="images/cinema-review.webp" alt="レビュー投稿機能の画面">
+                                </a>
+                            </section>
+                        </div>
+                    </section>
+
+                    <!-- 04 -->
+                    <section class="work-detail-block" id="content-design">
+                        <div class="work-section-heading">
+                            <span class="work-section-number">04</span>
+                            <h2>実装で工夫したこと</h2>
+                        </div>
+
+                        <div class="work-card-grid">
+                            <section class="work-point-card">
+                                <div class="work-card-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-component-icon lucide-component">
+                                        <path
+                                            d="M15.536 11.293a1 1 0 0 0 0 1.414l2.376 2.377a1 1 0 0 0 1.414 0l2.377-2.377a1 1 0 0 0 0-1.414l-2.377-2.377a1 1 0 0 0-1.414 0z" />
+                                        <path
+                                            d="M2.297 11.293a1 1 0 0 0 0 1.414l2.377 2.377a1 1 0 0 0 1.414 0l2.377-2.377a1 1 0 0 0 0-1.414L6.088 8.916a1 1 0 0 0-1.414 0z" />
+                                        <path
+                                            d="M8.916 17.912a1 1 0 0 0 0 1.415l2.377 2.376a1 1 0 0 0 1.414 0l2.377-2.376a1 1 0 0 0 0-1.415l-2.377-2.376a1 1 0 0 0-1.414 0z" />
+                                        <path
+                                            d="M8.916 4.674a1 1 0 0 0 0 1.414l2.377 2.376a1 1 0 0 0 1.414 0l2.377-2.376a1 1 0 0 0 0-1.414l-2.377-2.377a1 1 0 0 0-1.414 0z" />
+                                    </svg>
+                                </div>
+
+                                <h3>コンポーネント設計</h3>
+                                <p>
+                                    Header、Hero、MovieCard、MovieList、FavoriteButton、ReviewSectionなど、
+                                    役割ごとにコンポーネントを分けました。
+                                    修正範囲を整理し、機能追加やデザイン調整をしやすい構成にしています。
+                                </p>
+                            </section>
+
+                            <section class="work-point-card">
+                                <div class="work-card-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-file-braces-corner-icon lucide-file-braces-corner">
+                                        <path
+                                            d="M14 22h4a2 2 0 0 0 2-2V8a2.4 2.4 0 0 0-.706-1.706l-3.588-3.588A2.4 2.4 0 0 0 14 2H6a2 2 0 0 0-2 2v6" />
+                                        <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+                                        <path d="M5 14a1 1 0 0 0-1 1v2a1 1 0 0 1-1 1 1 1 0 0 1 1 1v2a1 1 0 0 0 1 1" />
+                                        <path d="M9 22a1 1 0 0 0 1-1v-2a1 1 0 0 1 1-1 1 1 0 0 1-1-1v-2a1 1 0 0 0-1-1" />
+                                    </svg>
+                                </div>
+                                <h3>APIデータの整形</h3>
+                                <p>
+                                    TMDB APIから取得した映画データをそのまま表示するのではなく、
+                                    公開年、評価、画像URL、ジャンル名などを表示用に整えました。
+                                    画像やあらすじが取得できない場合の代替表示も用意しています。
+                                </p>
+                            </section>
+
+                            <section class="work-point-card">
+                                <div class="work-card-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-database-icon lucide-database">
+                                        <ellipse cx="12" cy="5" rx="9" ry="3" />
+                                        <path d="M3 5V19A9 3 0 0 0 21 19V5" />
+                                        <path d="M3 12A9 3 0 0 0 21 12" />
+                                    </svg>
+                                </div>
+                                <h3>localStorage保存</h3>
+                                <p>
+                                    My Listやレビュー情報は映画IDごとにlocalStorageへ保存しました。
+                                    リロード後も保存状態を維持し、ユーザーがあとで見返せる構成にしています。
+                                </p>
+                            </section>
+                        </div>
+                    </section>
+
+                    <!-- 05 -->
+                    <section class="work-detail-block" id="design">
+                        <div class="work-section-heading">
+                            <span class="work-section-number">05</span>
+                            <h2>デザインで工夫したこと</h2>
+                        </div>
+
+                        <div class="work-card-grid">
+                            <section class="work-point-card">
+                                <div class="work-card-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-paintbrush-icon lucide-paintbrush">
+                                        <path d="m14.622 17.897-10.68-2.913" />
+                                        <path
+                                            d="M18.376 2.622a1 1 0 1 1 3.002 3.002L17.36 9.643a.5.5 0 0 0 0 .707l.944.944a2.41 2.41 0 0 1 0 3.408l-.944.944a.5.5 0 0 1-.707 0L8.354 7.348a.5.5 0 0 1 0-.707l.944-.944a2.41 2.41 0 0 1 3.408 0l.944.944a.5.5 0 0 0 .707 0z" />
+                                        <path
+                                            d="M9 8c-1.804 2.71-3.97 3.46-6.583 3.948a.507.507 0 0 0-.302.819l7.32 8.883a1 1 0 0 0 1.185.204C12.735 20.405 16 16.792 16 15" />
+                                    </svg>
+                                </div>
+                                <h3>映画サイトらしい色設計</h3>
+                                <p>
+                                    ダークトーンをベースに、sky系のアクセントカラーを使用しました。
+                                    映画館のような雰囲気と、作品画像が映える落ち着いた画面を意識しています。
+                                </p>
+                            </section>
+
+                            <section class="work-point-card">
+                                <div class="work-card-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-clapperboard-icon lucide-clapperboard">
+                                        <path d="m12.296 3.464 3.02 3.956" />
+                                        <path
+                                            d="M20.2 6 3 11l-.9-2.4c-.3-1.1.3-2.2 1.3-2.5l13.5-4c1.1-.3 2.2.3 2.5 1.3z" />
+                                        <path d="M3 11h18v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                                        <path d="m6.18 5.276 3.1 3.899" />
+                                    </svg>
+                                </div>
+                                <h3>Heroの世界観</h3>
+                                <p>
+                                    Heroでは映画の背景画像にグラデーションを重ね、
+                                    映画サイトらしい雰囲気と文字の読みやすさを両立させました。
+                                    コピーや余白も映画館のような印象になるよう調整しています。
+                                </p>
+                            </section>
+
+                            <section class="work-point-card">
+                                <div class="work-card-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-trophy-icon lucide-trophy">
+                                        <path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978" />
+                                        <path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978" />
+                                        <path d="M18 9h1.5a1 1 0 0 0 0-5H18" />
+                                        <path d="M4 22h16" />
+                                        <path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z" />
+                                        <path d="M6 9H4.5a1 1 0 0 1 0-5H6" />
+                                    </svg>
+                                </div>
+                                <h3>Featuredカード</h3>
+                                <p>
+                                    今週の話題作の1件目を大きく表示するFeaturedカードを追加しました。
+                                    通常カードとのメリハリをつけ、トップページに映画サイトらしい迫力を出しています。
+                                </p>
+                            </section>
+                        </div>
+                    </section>
+
+                    <!-- 06 -->
+                    <section class="work-detail-block" id="implementation">
+                        <div class="work-section-heading">
+                            <span class="work-section-number">06</span>
+                            <h2>ユーザー体験で工夫したこと</h2>
+                        </div>
+
+                        <div class="work-card-grid">
+                            <section class="work-point-card">
+                                <div class="work-card-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-summary-icon lucide-summary">
+                                        <path d="M15 4H7" />
+                                        <path d="m18 16 3 3-3 3" />
+                                        <path d="M3 4v13a2 2 0 0 0 2 2h16" />
+                                        <path d="M7 14h7" />
+                                        <path d="M7 9h12" />
+                                    </svg>
+                                </div>
+                                <h3>あらすじの続きを読む</h3>
+                                <p>
+                                    長いあらすじは途中まで表示し、「続きを読む」で全文を開けるようにしました。
+                                    詳細ページが間延びしないよう、必要な情報だけを見やすく表示しています。
+                                </p>
+                            </section>
+
+                            <section class="work-point-card">
+                                <div class="work-card-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-eye-off-icon lucide-eye-off">
+                                        <path
+                                            d="M10.733 5.076a10.744 10.744 0 0 1 11.205 6.575 1 1 0 0 1 0 .696 10.747 10.747 0 0 1-1.444 2.49" />
+                                        <path d="M14.084 14.158a3 3 0 0 1-4.242-4.242" />
+                                        <path
+                                            d="M17.479 17.499a10.75 10.75 0 0 1-15.417-5.151 1 1 0 0 1 0-.696 10.75 10.75 0 0 1 4.446-5.143" />
+                                        <path d="m2 2 20 20" />
+                                    </svg>
+                                </div>
+                                <h3>ネタバレ非表示</h3>
+                                <p>
+                                    レビュー投稿ではネタバレチェックを用意し、ネタバレを含むレビューはクリックするまで本文を隠すようにしました。
+                                    他の作品を探している人にも配慮した設計にしています。
+                                </p>
+                            </section>
+
+                            <section class="work-point-card">
+                                <div class="work-card-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-route-icon lucide-route">
+                                        <circle cx="6" cy="19" r="3" />
+                                        <path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15" />
+                                        <circle cx="18" cy="5" r="3" />
+                                    </svg>
+                                </div>
+                                <h3>関連映画への回遊</h3>
+                                <p>
+                                    詳細ページに関連映画一覧を表示し、気になる作品から次の作品へ移動できるようにしました。
+                                    映画を探し続けられる体験を意識しています。
+                                </p>
+                            </section>
+                        </div>
+                    </section>
+
+                    <section class="work-detail-block" id="experience">
+                        <div class="work-section-heading">
+                            <span class="work-section-number">07</span>
+                            <h2>これまでの経験とのつながり</h2>
+                        </div>
+
+                        <div class="work-background-layout">
+                            <div class="work-background-text">
+                                <p>
+                                    前作の静的サイト制作で得たHTML / CSS / JavaScriptの経験を土台に、
+                                    今回はReact / Next.js / TypeScriptを使い、APIデータや状態管理を扱うWebアプリケーションに挑戦しました。
+                                </p>
+
+                                <p>
+                                    コンポーネント単位でUIを分けたことで、修正範囲を意識しながら機能追加やデザイン調整を進める経験になりました。
+                                </p>
+
+                                <p>
+                                    また、APIから取得したデータをそのまま出すのではなく、
+                                    ユーザーにとって自然に見える形へ整える点では、これまで培ってきた情報整理力や利用者視点を活かしています。
+                                </p>
+
+                                <div class="work-skill-tags">
+                                    <span>React</span>
+                                    <span>Next.js</span>
+                                    <span>TypeScript</span>
+                                    <span>API連携</span>
+                                    <span>状態管理</span>
+                                    <span>コンポーネント設計</span>
+                                    <span>情報整理</span>
+                                    <span>利用者視点</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 08 -->
+                    <section class="work-detail-block" id="improvement">
+                        <div class="work-section-heading">
+                            <span class="work-section-number">08</span>
+                            <h2>今後改善したい点</h2>
+                        </div>
+
+                        <div class="work-improvement-grid">
+                            <span>映画一覧から直接My List追加</span>
+                            <span>スマホ下部タブバー</span>
+                            <span>コラムコンテンツ追加</span>
+                            <span>レビュー一覧ページ</span>
+                            <span>DB・認証機能の導入</span>
+                            <span>ユーザー別保存機能</span>
+                        </div>
+
+                        <p>
+                            今後は、映画一覧カードから直接My Listへ追加できる機能や、
+                            スマートフォン向けの下部タブバー、コラムコンテンツの追加などを検討しています。
+                        </p>
+
+                        <p>
+                            また、現在はlocalStorageで保存しているレビューやMy List情報を、
+                            将来的にはDBや認証機能と組み合わせ、ユーザーごとに管理できる構成へ発展させたいと考えています。
+                        </p>
+                    </section>
+
+                    <!-- 下部ボタン -->
+                    <div class="work-detail-bottom-actions">
+                        <a href="index.html#works" class="button button-outline">
+                            Works一覧へ戻る
+                        </a>
+
+                        <a href="experience.html" class="button button-primary">
+                            経歴ページを見る
+                            <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+
+                </article>
+
+                <aside class="work-detail-side">
+                    <nav class="work-detail-nav" aria-label="制作背景ページ内ナビゲーション">
+                        <h2>ページ内メニュー</h2>
+
+                        <a href="#background">
+                            <span>01</span>
+                            制作背景・制作目的
+                        </a>
+
+                        <a href="#overview">
+                            <span>02</span>
+                            制作概要
+                        </a>
+
+                        <a href="#information-design">
+                            <span>03</span>
+                            主な機能
+                        </a>
+
+                        <a href="#content-design">
+                            <span>04</span>
+                            実装
+                        </a>
+
+                        <a href="#design">
+                            <span>05</span>
+                            デザイン
+                        </a>
+
+                        <a href="#implementation">
+                            <span>06</span>
+                            ユーザー体験
+                        </a>
+
+                        <a href="#experience">
+                            <span>07</span>
+                            経験とのつながり
+                        </a>
+
+                        <a href="#improvement">
+                            <span>08</span>
+                            改善点
+                        </a>
+                    </nav>
+                </aside>
+
+            </div>
+        </section>
+
+        <section class="section contact-section" id="contact">
+            <div class="section-inner">
+                <div class="contact-pill">
+                    <div class="contact-dog">
+                        <img src="images/contact-dog.webp" alt="サモエド">
+                    </div>
+                    <div class="contact-content">
+                        <div class="contact-text">
+                            <h2>ご相談・お見積りはこちら</h2>
+                            <p>Web制作や記事執筆、サイト運用など、お気軽にご相談ください。<br>
+                                内容を確認のうえ、2〜3営業日以内にご連絡いたします。</p>
+                        </div>
+                        <div class="contact-action">
+                            <a href="mailto:example@example.com" class="button button-primary">
+                                お問い合わせする →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="image-lightbox" id="image-lightbox" aria-hidden="true">
+            <button class="image-lightbox-close" type="button" aria-label="画像を閉じる">×</button>
+            <img src="" alt="">
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+
+            <div class="footer-main">
+                <a href="#home" class="site-logo footer-logo" aria-label="Yuki Studio トップへ">
+                    <img src="images/logo-paw.svg" alt="肉球のロゴ" class="logo-mark">
+                    <span class="logo-text">
+                        <span class="logo-main">Yuki Studio</span>
+                        <span class="logo-sub">Web &amp; Writing Portfolio</span>
+                    </span>
+                </a>
+
+                <nav class="footer-nav" aria-label="フッターナビゲーション">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#works">Works</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer-sns" aria-label="SNS・連絡先">
+                    <a href="#" aria-label="GitHub">
+                        <img src="images/github-repo-icon.webp" alt="GitHub">
+                    </a>
+
+                    <a href="mailto:example@example.com" aria-label="メール">
+                        <img src="images/mail-icon.webp" alt="メール">
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-copy">
+                <p class="copyright">© 2026 Yuki Studio</p>
+            </div>
+
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

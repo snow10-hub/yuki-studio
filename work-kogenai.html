@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Yuki Studio | Web & Writing Portfolio</title>
+    <meta name="description" content="Yuki Studioは、IT実務経験を土台に、情報設計・文章作成・Web制作・運用まで対応するポートフォリオサイトです。">
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/work.css">
+
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="#home" class="site-logo" aria-label="Yuki Studio トップへ">
+                <img src="images/logo-paw.svg" alt="肉球のロゴ" class="logo-mark">
+                <span class="logo-text">
+                    <span class="logo-main">Yuki Studio</span>
+                    <span class="logo-sub">Web &amp; Writing Portfolio</span>
+                </span>
+            </a>
+
+            <button class="menu-toggle" type="button" aria-label="メニューを開く" aria-expanded="false"
+                aria-controls="global-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="global-nav" aria-label="グローバルナビゲーション">
+                <ul class="nav-list">
+                    <li><a href="#home" class="is-current">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#works">Works</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- ヒーロー -->
+        <section class="work-detail-hero">
+            <div class="section-inner work-detail-hero-inner">
+                <div class="work-detail-hero-content">
+                    <p class="section-label">
+                        <img src="images/logo-paw.svg" alt="" class="section-logo-mark">
+                        WORK DETAIL
+                    </p>
+
+                    <h1>焦げない台所</h1>
+
+                    <p class="work-detail-lead">
+                        時短や効率だけではこぼれてしまう料理の楽しさをテーマにした、
+                        架空のレシピ・コラムサイトです。
+                    </p>
+
+                    <div class="work-detail-actions">
+                        <a href="https://snow10-hub.github.io/kogenai-kitchen/index.html" class="button button-primary"
+                            target="_blank" rel="noopener">
+                            サイトを見る
+                            <span aria-hidden="true">→</span>
+                        </a>
+
+                        <a href="index.html#works" class="button button-outline">
+                            Worksへ戻る
+                        </a>
+                    </div>
+                </div>
+
+                <div class="work-detail-hero-visual">
+                    <img src="images/kogenai-kitchen.webp" alt="焦げない台所のサイト画面">
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- 本文エリア -->
+        <section class="section work-detail-section">
+            <div class="section-inner work-detail-layout">
+
+                <article class="work-detail-main">
+                    <section class="work-detail-block" id="background">
+                    <!-- 01 -->
+                        <div class="work-section-heading">
+                            <span class="work-section-number">01</span>
+                            <h2>制作背景・制作目的</h2>
+                        </div>
+
+                        <div class="work-background-layout">
+                            <div class="work-background-text">
+                                <p>
+                                    レシピサイトを見ていると、「時短」や「簡単さ」を重視するあまり、料理のおいしさにつながる大事な工程が省かれていると感じることがありました。また、おしゃれな雰囲気と料理中の使いやすさを両立したサイトは、意外と少ないとも感じていました。さらに、スマホで料理をしながら材料を確認するたびに、画面上部まで何度も戻る手間にもストレスを感じていました。
+                                </p>
+
+                                <p>
+                                  これらの課題を解決するため、PC版では作り方と材料・コツを横並びで確認できる設計にし、スマホ版ではタブ切り替えによって必要な情報へ移動しやすくしました。さらに印刷対応CSSも用意し、「見ながら作る」という行動に寄り添う情報設計を目指しました。  
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- 02 -->
+                    <section class="work-detail-block" id="overview">
+                        <div class="work-section-heading">
+                            <span class="work-section-number">02</span>
+                            <h2>制作概要</h2>
+                        </div>
+
+                        <div class="work-card-grid">
+                            <section class="work-point-card">
+                                <div class="work-card-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-target-icon lucide-target">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <circle cx="12" cy="12" r="6" />
+                                        <circle cx="12" cy="12" r="2" />
+                                    </svg>
+                                </div>
+                                <h3>制作目的</h3>
+                                <p>
+                                    料理中の使いやすさと、読みものとしての楽しさを両立した架空のレシピ・コラムサイト。
+                                </p>
+                            </section>
+
+                            <section class="work-point-card">
+                                <div class="work-card-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-square-user-round-icon lucide-square-user-round">
+                                        <path d="M18 21a6 6 0 0 0-12 0" />
+                                        <circle cx="12" cy="11" r="4" />
+                                        <rect width="18" height="18" x="3" y="3" rx="2" />
+                                    </svg>
+                                </div>
+                                <h3>担当範囲</h3>
+                                <p>
+                                    企画・設計・デザイン・実装・レスポンシブ対応まで一貫して担当。
+                                </p>
+                            </section>
+
+                            <section class="work-point-card">
+                                <div class="work-card-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-wrench-icon lucide-wrench">
+                                        <path
+                                            d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z" />
+                                    </svg>
+                                </div>
+                                <h3>使用技術</h3>
+                                <p>
+                                    HTML / CSS / JavaScript / Git / GitHub / GitHub Pages
+                                </p>
+                            </section>
+                        </div>
+                    </section>
+
+
+                    <!-- 03 -->
+                    <section class="work-detail-block" id="information-design">
+                        <div class="work-section-heading">
+                            <span class="work-section-number">03</span>
+                            <h2>情報設計で意識したこと</h2>
+                        </div>
+
+                        <div class="work-card-grid">
+                            <section class="work-point-card">
+                                <div>
+                                    <h3>PC版の見せ方</h3>
+                                    <p>
+                                        レシピ詳細ページでは、左側に作り方、右側に材料・コツ・アレンジを配置しました。
+                                        料理中に必要な情報を、視線移動だけで確認しやすい構成にしています。
+                                    </p>
+                                </div>
+
+                                <a href="images/pc-image.webp" class="work-card-thumb js-lightbox">
+                                    <img src="images/pc-image.webp" alt="レシピ詳細ページのPC表示">
+                                </a>
+                            </section>
+
+                            <section class="work-point-card">
+                                <div>
+                                    <h3>スマホ版の情報整理</h3>
+                                    <p>
+                                        スマホ版では、材料・作り方・コツ・アレンジをタブで切り替えられるようにしました。
+                                        限られた画面でも、必要な情報を探しやすく整理しています。
+                                    </p>
+                                </div>
+
+                                <a href="images/sp-image.webp" class="work-card-thumb js-lightbox">
+                                    <img src="images/sp-image.webp" alt="レシピ詳細ページのスマホ表示">
+                                </a>
+                            </section>
+
+                            <section class="work-point-card">
+                                <div>
+                                    <h3>サイト内の回遊導線</h3>
+                                    <p>
+                                        レシピ一覧・コラム一覧・関連記事・パンくずリストを用意し、
+                                        気になるページへ自然に移動できる構成にしました。
+                                        単発の記事で終わらない、小さな料理メディアとしての回遊性を意識しています。
+                                    </p>
+                                </div>
+
+                                <a href="images/link-image.webp" class="work-card-thumb js-lightbox">
+                                    <img src="images/link-image.webp" alt="サイト内の回遊導線">
+                                </a>
+                            </section>
+                        </div>
+                    </section>
+
+                    <!-- 04 -->
+                    <section class="work-detail-block" id="content-design">
+                        <div class="work-section-heading">
+                            <span class="work-section-number">04</span>
+                            <h2>コンテンツ設計で意識したこと</h2>
+                        </div>
+
+                        <div class="work-card-grid">
+                            <section class="work-point-card">
+                                <div class="work-card-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-hamburger-icon lucide-hamburger">
+                                        <path d="M12 16H4a2 2 0 1 1 0-4h16a2 2 0 1 1 0 4h-4.25" />
+                                        <path d="M5 12a2 2 0 0 1-2-2 9 7 0 0 1 18 0 2 2 0 0 1-2 2" />
+                                        <path
+                                            d="M5 16a2 2 0 0 0-2 2 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 2 2 0 0 0-2-2q0 0 0 0" />
+                                        <path d="m6.67 12 6.13 4.6a2 2 0 0 0 2.8-.4l3.15-4.2" />
+                                    </svg>
+                                </div>
+
+                                <h3>自作料理ベース</h3>
+                                <p>
+                                    サイト内で扱う料理は、実際に自分で作ったものをもとに構成しました。
+                                    写真やレシピ内容も、家庭で再現しやすいことを意識しながら整理しています。
+                                </p>
+                            </section>
+
+                            <section class="work-point-card">
+                                <div class="work-card-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-cooking-pot-icon lucide-cooking-pot">
+                                        <path d="M2 12h20" />
+                                        <path d="M20 12v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-8" />
+                                        <path d="m4 8 16-4" />
+                                        <path
+                                            d="m8.86 6.78-.45-1.81a2 2 0 0 1 1.45-2.43l1.94-.48a2 2 0 0 1 2.43 1.46l.45 1.8" />
+                                    </svg>
+                                </div>
+                                <h3>家庭向けレシピ設計</h3>
+                                <p>
+                                    専門的な調理法やプロのレシピから得た知識を参考にしつつ、
+                                    家庭のキッチンでも作りやすい分量・工程・材料に落とし込むことを意識しました。
+                                    単なる転載ではなく、実際に作る場面に合わせて調整しています。
+                                </p>
+                            </section>
+
+                            <section class="work-point-card">
+                                <div class="work-card-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-book-a-icon lucide-book-a">
+                                        <path
+                                            d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20" />
+                                        <path d="m8 13 4-7 4 7" />
+                                        <path d="M9.1 11h5.7" />
+                                    </svg>
+                                </div>
+                                <h3>レシピ×コラムの構成</h3>
+                                <p>
+                                    レシピだけでなく、料理や自炊にまつわるコラムページも制作しました。
+                                    作り方だけで終わらせず、料理への向き合い方やサイト全体の価値観が伝わるようにしています。
+                                </p>
+                            </section>
+                        </div>
+                    </section>
+
+                    <!-- 05 -->
+                    <section class="work-detail-block" id="design">
+                        <div class="work-section-heading">
+                            <span class="work-section-number">05</span>
+                            <h2>デザインで工夫したこと</h2>
+                        </div>
+
+                        <div class="work-card-grid">
+                            <section class="work-point-card">
+                                <div class="work-card-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-palette-icon lucide-palette">
+                                        <path
+                                            d="M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z" />
+                                        <circle cx="13.5" cy="6.5" r=".5" fill="currentColor" />
+                                        <circle cx="17.5" cy="10.5" r=".5" fill="currentColor" />
+                                        <circle cx="6.5" cy="12.5" r=".5" fill="currentColor" />
+                                        <circle cx="8.5" cy="7.5" r=".5" fill="currentColor" />
+                                    </svg>
+                                </div>
+                                <h3>落ち着いた雰囲気</h3>
+                                <p>
+                                    ベージュ・ブラウン・オリーブを基調に、落ち着いた料理メディアのような雰囲気を目指しました。
+                                    派手さよりも、料理や暮らしの温度感が伝わる配色を意識しています。
+                                </p>
+                            </section>
+
+                            <section class="work-point-card">
+                                <div class="work-card-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-type-icon lucide-type">
+                                        <path d="M12 4v16" />
+                                        <path d="M4 7V5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2" />
+                                        <path d="M9 20h6" />
+                                    </svg>
+                                </div>
+                                <h3>トップページ</h3>
+                                <p>
+                                    トップページでは、暗めの料理写真に明朝体のコピーを重ねることで、
+                                    「焦らず、焦がさず、ひと手間を。」というサイトコンセプトが最初に伝わるようにしました。
+                                </p>
+                            </section>
+
+                            <section class="work-point-card">
+                                <div class="work-card-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-camera-icon lucide-camera">
+                                        <path
+                                            d="M13.997 4a2 2 0 0 1 1.76 1.05l.486.9A2 2 0 0 0 18.003 7H20a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h1.997a2 2 0 0 0 1.759-1.048l.489-.904A2 2 0 0 1 10.004 4z" />
+                                        <circle cx="12" cy="13" r="3" />
+                                    </svg>
+                                </div>
+                                <h3>カードと余白の工夫</h3>
+                                <p>
+                                    レシピカードやコラムカードは、写真・カテゴリ・タイトル・説明文・メタ情報の並びを統一しました。
+                                    余白を広めに取り、紙面や雑誌のように落ち着いて読める印象になるよう調整しています。
+                                </p>
+                            </section>
+                        </div>
+                    </section>
+
+                    <!-- 06 -->
+                    <section class="work-detail-block" id="implementation">
+                        <div class="work-section-heading">
+                            <span class="work-section-number">06</span>
+                            <h2>実装で工夫したこと</h2>
+                        </div>
+
+                        <div class="work-card-grid">
+                            <section class="work-point-card">
+                                <div class="work-card-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-monitor-smartphone-icon lucide-monitor-smartphone"><path d="M18 8V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h8"/><path d="M10 19v-3.96 3.15"/><path d="M7 19h5"/><rect width="6" height="10" x="16" y="12" rx="2"/></svg>
+                                </div>
+                                <h3>レスポンシブ対応</h3>
+                                <p>
+                                    メディアクエリを使い、PCでは情報を横並びで確認しやすく、
+                                    スマートフォンでは縦方向に読み進めやすいレイアウトへ切り替えました。
+                                    画面幅に応じて余白や文字サイズも調整しています。
+                                </p>
+                            </section>
+
+                            <section class="work-point-card">
+                                <div class="work-card-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-printer-icon lucide-printer"><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 9V3a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v6"/><rect x="6" y="14" width="12" height="8" rx="1"/></svg>
+                                </div>
+                                <h3>印刷対応CSS</h3>
+                                <p>
+                                    印刷用CSSを用意し、画面上ではタブで分かれている情報も、
+                                    印刷時にはまとめて確認できるようにしました。
+                                    スマホ閲覧だけでなく、紙で見ながら料理する場面も想定しています。
+                                </p>
+                            </section>
+
+                            <section class="work-point-card">
+                                <div class="work-card-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-route-icon lucide-route"><circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/></svg>
+                                </div>
+                                <h3>カテゴリフィルター</h3>
+                                <p>
+                                    レシピ一覧ページでカテゴリボタンを押すと、該当する料理だけを絞り込んで表示できるようにJavaScriptで実装しました。ページ遷移なしで切り替わるため、見たいレシピをすばやく探せます。
+                                </p>
+                            </section>
+                        </div>
+                    </section>
+
+                    <section class="work-detail-block" id="experience">
+                        <div class="work-section-heading">
+                            <span class="work-section-number">07</span>
+                            <h2>これまでの経験とのつながり</h2>
+                        </div>
+
+                        <div class="work-background-layout">
+                            <div class="work-background-text">
+                                <p>
+                                    これまでの業務では、IT領域での要件整理・進行補助・課題管理・業務改善などに携わってきました。
+                                </p>
+
+                                <p>
+                                    今回の制作でも、単に画面を作るだけではなく、
+                                    「誰が、どの場面で、どの情報を必要とするか」を考えながら設計しています。
+                                </p>
+
+                                <p>
+                                    PCとスマホで情報の見せ方を変えた点や、印刷対応を入れた点は、
+                                    これまでの業務で培った情報整理力や利用者視点とつながっています。
+                                </p>
+
+                                <p>
+                                    また、WordPress運用やライティング経験を活かし、
+                                    レシピだけでなくコラムも含めたコンテンツ設計を行いました。
+                                </p>
+
+                                <div class="work-skill-tags">
+                                    <span>情報整理</span>
+                                    <span>要件整理</span>
+                                    <span>利用者視点</span>
+                                    <span>導線設計</span>
+                                    <span>業務改善</span>
+                                    <span>ライティング</span>
+                                    <span>WordPress運用</span>
+                                    <span>コンテンツ設計</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 07 -->
+                    <section class="work-detail-block" id="improvement">
+                        <div class="work-section-heading">
+                            <span class="work-section-number">07</span>
+                            <h2>今後改善したい点</h2>
+                        </div>
+
+                        <div class="work-improvement-grid">
+                            <span>CSSの整理</span>
+                            <span>画像の軽量化</span>
+                            <span>レシピ検索機能の追加</span>
+                            <span>コラムの読了時間自動計算</span>
+                            <span>WordPress化</span>
+                            <span>コンテンツ追加</span>
+                        </div>
+
+                        <p>
+                            今後は、CSSの整理や画像軽量化を進め、表示速度と保守性をさらに改善したいと考えています。
+                        </p>
+
+                        <p>
+                            また、検索機能を強化し、レシピやコラムを増やしながら、
+                            WordPress化によって更新しやすいサイトへ発展させていきたいです。
+                        </p>
+                    </section>
+
+                    <!-- 下部ボタン -->
+                    <div class="work-detail-bottom-actions">
+                        <a href="index.html#works" class="button button-outline">
+                            Works一覧へ戻る
+                        </a>
+
+                        <a href="experience.html" class="button button-primary">
+                            経歴ページを見る
+                            <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+
+                </article>
+
+                <aside class="work-detail-side">
+                    <nav class="work-detail-nav" aria-label="制作背景ページ内ナビゲーション">
+                        <h2>ページ内メニュー</h2>
+
+                        <a href="#background">
+                            <span>01</span>
+                            制作背景・制作目的
+                        </a>
+
+                        <a href="#overview">
+                            <span>02</span>
+                            制作概要
+                        </a>   
+
+                        <a href="#information-design">
+                            <span>03</span>
+                            情報設計
+                        </a>
+
+                        <a href="#content-design">
+                            <span>04</span>
+                            コンテンツ設計
+                        </a>
+
+                        <a href="#design">
+                            <span>05</span>
+                            デザイン
+                        </a>
+
+                        <a href="#implementation">
+                            <span>06</span>
+                            実装
+                        </a>
+
+                        <a href="#experience">
+                            <span>07</span>
+                            経験とのつながり
+                        </a>
+
+                        <a href="#improvement">
+                            <span>08</span>
+                            改善点
+                        </a>
+                    </nav>
+                </aside>
+
+            </div>
+        </section>
+
+        <section class="section contact-section" id="contact">
+            <div class="section-inner">
+                <div class="contact-pill">
+                    <div class="contact-dog">
+                        <img src="images/contact-dog.webp" alt="サモエド">
+                    </div>
+                    <div class="contact-content">
+                        <div class="contact-text">
+                            <h2>ご相談・お見積りはこちら</h2>
+                            <p>Web制作や記事執筆、サイト運用など、お気軽にご相談ください。<br>
+                                内容を確認のうえ、2〜3営業日以内にご連絡いたします。</p>
+                        </div>
+                        <div class="contact-action">
+                            <a href="mailto:example@example.com" class="button button-primary">
+                                お問い合わせする →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="image-lightbox" id="image-lightbox" aria-hidden="true">
+            <button class="image-lightbox-close" type="button" aria-label="画像を閉じる">×</button>
+            <img src="" alt="">
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+
+            <div class="footer-main">
+                <a href="#home" class="site-logo footer-logo" aria-label="Yuki Studio トップへ">
+                    <img src="images/logo-paw.svg" alt="肉球のロゴ" class="logo-mark">
+                    <span class="logo-text">
+                        <span class="logo-main">Yuki Studio</span>
+                        <span class="logo-sub">Web &amp; Writing Portfolio</span>
+                    </span>
+                </a>
+
+                <nav class="footer-nav" aria-label="フッターナビゲーション">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#works">Works</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer-sns" aria-label="SNS・連絡先">
+                    <a href="#" aria-label="GitHub">
+                        <img src="images/github-repo-icon.webp" alt="GitHub">
+                    </a>
+
+                    <a href="mailto:example@example.com" aria-label="メール">
+                        <img src="images/mail-icon.webp" alt="メール">
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-copy">
+                <p class="copyright">© 2026 Yuki Studio</p>
+            </div>
+
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

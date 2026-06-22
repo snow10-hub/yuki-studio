@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Yuki Studio | Web & Writing Portfolio</title>
+  <meta name="description" content="Yuki Studioは、IT実務経験を土台に、情報設計・文章作成・Web制作・運用まで対応するポートフォリオサイトです。">
+
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#home" class="site-logo" aria-label="Yuki Studio トップへ">
+        <img src="images/logo-paw.svg" alt="肉球のロゴ" class="logo-mark">
+        <span class="logo-text">
+          <span class="logo-main">Yuki Studio</span>
+          <span class="logo-sub">Web &amp; Writing Portfolio</span>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="global-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="global-nav" aria-label="グローバルナビゲーション">
+        <ul class="nav-list">
+          <li><a href="#home" class="is-current">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <p class="hero-label">Web Production / Writing / Workflow Improvement</p>
+
+          <h1 class="hero-title">
+            複雑な情報を、<br>
+            伝わる形にする。
+          </h1>
+
+          <p class="hero-lead">
+            IT業界での業務改善・顧客対応の経験を活かし、<br>
+            情報設計からWeb制作、コンテンツ運用まで一貫して取り組んでいます。
+          </p>
+
+          <div class="hero-actions">
+            <a href="#works" class="button button-primary">
+              制作実績を見る
+              <span aria-hidden="true">→</span>
+            </a>
+          </div>
+
+          <a href="#about" class="scroll-link">
+            <img src="images/logo-paw.svg" alt="肉球のロゴ" class="section-logo-mark">
+            <span>Scroll Down</span>
+            <span aria-hidden="true">⌄</span>
+          </a>
+        </div>
+
+        <div class="hero-visual">
+          <img src="images/hero-dog.webp" alt="白い犬とノートパソコン、本、マグカップが並ぶ制作室のイメージ">
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="section-inner about-layout">
+        <div class="section-heading">
+          <div class="section-title-row">
+            <div>
+              <p class="section-label">
+                <img src="images/logo-paw.svg" alt="肉球のロゴ" class="section-logo-mark">
+                ABOUT
+              </p>
+              <h2>できること</h2>
+            </div>
+          </div>
+
+          <p class="section-text">
+            情報を整理し、課題を見つけて形にすることが得意です。
+            IT実務・業務改善・コンテンツ制作の経験を活かし、
+            Webと文章で価値を届けます。
+          </p>
+          <p class="section-text">
+            状況を整理しながら必要なことを考え、制作・改善の両面から組織に貢献します。
+          </p>
+
+          <a href="career.html" class="button button-outline">
+            経歴ページを見る
+            <span aria-hidden="true">→</span>
+          </a>
+
+          <div class="about-dog">
+            <img src="images/about-dog.webp" alt="About">
+          </div>
+        </div>
+
+        <div class="service-list">
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true"><img src="images/icon-writing.webp" alt="ライティングアイコン" width="32"
+                height="32"></div>
+            <h3>情報を伝える</h3>
+            <p>
+              記事200本超の執筆経験。構成設計から執筆・画像制作まで対応します。
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true"><img src="images/icon-pc.webp" alt="PC画面のイメージ"></div>
+            <h3>情報を設計する</h3>
+            <p>
+              情報設計を重視し、ユーザー目線の構造と導線を意識したWebページ制作に取り組んでいます。
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true"><img src="images/icon-graph.webp" alt="グラフのイメージ図"></div>
+            <h3>情報を改善する</h3>
+            <p>
+              顧客対応・業務改善の経験を活かし、課題解決につながる仕組みづくりを行います。
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section works-section" id="works">
+      <div class="section-inner">
+        <div class="section-title-row">
+          <div>
+            <p class="section-label">
+              <img src="images/logo-paw.svg" alt="肉球のロゴ" class="section-logo-mark">
+              WORKS
+            </p>
+            <h2>制作実績</h2>
+          </div>
+        </div>
+
+        <div class="works-list">
+          <article class="work-card work-card-featured">
+            <a href="https://snow10-hub.github.io/kogenai-kitchen/index.html" class="work-image">
+              <img src="images/kogenai-kitchen.webp" alt="焦げない台所のサイト画面" width="640" height="380">
+              <div class="work-image-text">
+                <p class="work-title-on-image">焦げない台所</p>
+                <p>レシピとコラムの読み物型サイト</p>
+                <div class="work-tags">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+              </div>
+            </a>
+
+            <div class="work-body">
+              <h3>焦げない台所</h3>
+              <p>
+                料理をテーマに、レシピ・コラム・プロフィールまで設計した読み物型サイトです。
+                企画、文章作成、情報設計、デザイン、HTML/CSS/JavaScript実装まで一貫して制作しました。
+              </p>
+              <p class="work-meta">
+                企画 / ライティング / 情報設計 / デザイン / コーディング / レスポンシブ対応
+              </p>
+              <div class="work-links">
+                <a href="work-kogenai.html" class="work-link">
+                  制作背景を見る
+                  <span aria-hidden="true">→</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="work-card">
+            <a href="#" class="work-image">
+              <img src="images/movie-site.webp" alt="映画サイトの制作イメージ" width="640" height="380">
+              <div class="work-image-text">
+                <p class="work-title-on-image">映画サイト</p>
+                <p>レビューと考察の読み物型サイト</p>
+                <div class="work-tags">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+              </div>
+            </a>
+
+            <div class="work-body">
+              <h3>映画サイト</h3>
+              <p>
+                映画レビューや考察記事をテーマにした、読み物型サイトとして制作予定です。
+                カテゴリ設計、記事導線、デザイン、コーディングまで含めて制作します。
+              </p>
+              <p class="work-meta">
+                企画 / 情報設計 / デザイン / コーディング / Coming Soon
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section experience-section" id="experience">
+      <div class="section-inner">
+        <div class="section-title-row">
+          <div>
+            <p class="section-label">
+              <img src="images/logo-paw.svg" alt="肉球のロゴ" class="section-logo-mark">
+              EXPERIENCE
+            </p>
+            <h2>活動・実務経験</h2>
+          </div>
+        </div>
+
+        <!-- 💡【追加】見出しの下のリード文 -->
+        <p class="section-lead">これまでの実務経験や、継続して取り組んできた活動についてご紹介します。</p>
+
+        <div class="experience-list">
+          <!-- カード1：前職のIT企業での実績 -->
+          <article class="experience-card">
+            <!-- 💡【追加】左側の丸いアイコンエリア -->
+            <div class="experience-icon-wrap">
+              <img src="images/icon-company.webp" alt="IT企業のアイコン" class="experience-icon">
+            </div>
+            <!-- 右側のテキストコンテンツエリア -->
+            <div class="experience-body">
+              <h3>IT企業での実務</h3>
+              <p>
+                要件定義や顧客折衝、業務改善プロジェクトに従事。<br>
+                データ移行や自動化ツールの構築・納品など、幅広い実務経験があります。<br>現場での自走力が評価され、正社員へ引き抜かれました。
+              </p>
+              <!-- 💡【追加】下部のタグエリア -->
+              <div class="experience-tags">
+                <span>要件定義</span>
+                <span>顧客折衝</span>
+                <span>業務改善</span>
+                <span>データ移行</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- カード2：会計事務所での実績 -->
+          <article class="experience-card">
+            <div class="experience-icon-wrap">
+              <img src="images/accounting-icon.webp" alt="会計のアイコン" class="experience-icon">
+            </div>
+            <div class="experience-body">
+              <h3>ライティング・コンテンツ制作</h3>
+              <p>
+                WordPressブログ運営やWebライティングを継続。
+                記事執筆からSEO分析、画像制作まで一貫して対応しています。
+              </p>
+              <div class="experience-tags">
+                <span>VBA</span>
+                <span>RPA</span>
+                <span>帳票作成</span>
+                <span>業務効率化</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- カード3：個人でのコンテンツ運用実績 -->
+          <article class="experience-card">
+            <div class="experience-icon-wrap">
+              <img src="images/pc-icon.webp" alt="PCのアイコン" class="experience-icon">
+            </div>
+            <div class="experience-body">
+              <h3>Web制作・個人開発</h3>
+              <p>
+                HTML/CSS・JavaScriptを用いたサイト制作に取り組んでいます。<br>
+                企画・情報設計・デザイン・コーディングまで一貫して制作しています。
+              </p>
+              <div class="experience-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>WordPress</span>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="experience-link">
+          <a href="career.html" class="button button-outline">
+            経歴ページを見る
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="skills">
+      <div class="section-inner">
+        <p class="section-label">
+          <img src="images/logo-paw.svg" alt="肉球のロゴ" class="section-logo-mark">
+          SKILLS
+        </p>
+
+        <h2>対応スキル</h2>
+
+        <div class="skill-groups">
+          <section class="skill-group">
+            <h3>
+              <img src="images/handshake-icon.webp" alt="" class="skill-group-icon">
+              Upstream / IT
+            </h3>
+            <div class="skill-tags">
+              <span>顧客折衝</span>
+              <span>要件定義</span>
+              <span>業務改善</span>
+              <span>課題管理</span>
+            </div>
+          </section>
+
+          <section class="skill-group">
+            <h3><img src="images/it-icon.webp" alt="" class="skill-group-icon">
+              Automation / Tools</h3>
+            <div class="skill-tags">
+              <span>VBA</span>
+              <span>RPA</span>
+              <span>WAHA! Transformer</span>
+              <span>Access</span>
+              <span>Excel</span>
+              <span>データ加工・変換</span>
+              <span>説明会対応</span>
+            </div>
+          </section>
+
+          <section class="skill-group">
+            <h3>
+              <img src="images/palette-icon.webp" alt="" class="skill-group-icon">
+              Web
+            </h3>
+            <div class="skill-tags">
+              <span>HTML/CSS</span>
+              <span>JavaScript</span>
+              <span>レスポンシブ対応</span>
+              <span>WordPress</span>
+              <span>情報設計</span>
+              <span>UI改善</span>
+            </div>
+          </section>
+
+          <section class="skill-group">
+            <h3>
+              <img src="images/pen-nib-icon.webp" alt="" class="skill-group-icon">
+              Writing
+            </h3>
+            <div class="skill-tags">
+              <span>記事執筆</span>
+              <span>SEO</span>
+              <span>編集・リライト</span>
+              <span>コンテンツ企画</span>
+              <span>レビュー執筆</span>
+              <span>WordPress運用</span>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="section-inner">
+        <div class="contact-pill">
+          <div class="contact-dog">
+            <img src="images/contact-dog.webp" alt="サモエド">
+          </div>
+          <div class="contact-content">
+            <div class="contact-text">
+              <h2>ご相談・お見積りはこちら</h2>
+              <p>Web制作や記事執筆、サイト運用など、お気軽にご相談ください。<br>
+                内容を確認のうえ、2〜3営業日以内にご連絡いたします。</p>
+            </div>
+            <div class="contact-action">
+              <a href="mailto:example@example.com" class="button button-primary">
+                お問い合わせする →
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+
+      <div class="footer-main">
+        <a href="#home" class="site-logo footer-logo" aria-label="Yuki Studio トップへ">
+          <img src="images/logo-paw.svg" alt="肉球のロゴ" class="logo-mark">
+          <span class="logo-text">
+            <span class="logo-main">Yuki Studio</span>
+            <span class="logo-sub">Web &amp; Writing Portfolio</span>
+          </span>
+        </a>
+
+        <nav class="footer-nav" aria-label="フッターナビゲーション">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-sns" aria-label="SNS・連絡先">
+          <a href="#" aria-label="GitHub">
+            <img src="images/github-repo-icon.webp" alt="GitHub">
+          </a>
+
+          <a href="mailto:example@example.com" aria-label="メール">
+            <img src="images/mail-icon.webp" alt="メール">
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-copy">
+        <p class="copyright">© 2026 Yuki Studio</p>
+      </div>
+
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
