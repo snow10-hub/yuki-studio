@@ -82,4 +82,48 @@
             }
         });
     }
+
+    const contactForm = document.querySelector(".contact-form");
+
+if (contactForm) {
+    contactForm.addEventListener("submit", async (event) => {
+        event.preventDefault();
+
+        const formData = new FormData(contactForm);
+        const submitButton = contactForm.querySelector('button[type="submit"]');
+
+        if (submitButton) {
+            submitButton.disabled = true;
+            submitButton.textContent = "送信中...";
+        }
+
+        try {
+            const response = await fetch(contactForm.action, {
+                method: "POST",
+                body: formData,
+                headers: {
+                    Accept: "application/json",
+                },
+            });
+
+            if (response.ok) {
+                window.location.href = "thank.html";
+            } else {
+                alert("送信に失敗しました。時間をおいてもう一度お試しください。");
+
+                if (submitButton) {
+                    submitButton.disabled = false;
+                    submitButton.textContent = "送信する";
+                }
+            }
+        } catch (error) {
+            alert("送信に失敗しました。通信環境をご確認ください。");
+
+            if (submitButton) {
+                submitButton.disabled = false;
+                submitButton.textContent = "送信する";
+            }
+        }
+    });
+}
 }

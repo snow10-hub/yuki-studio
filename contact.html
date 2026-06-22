@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Yuki Studio | Web & Writing Portfolio</title>
+    <meta name="description" content="Yuki Studioは、IT実務経験を土台に、情報設計・文章作成・Web制作・運用まで対応するポートフォリオサイトです。">
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="#home" class="site-logo" aria-label="Yuki Studio トップへ">
+                <img src="images/logo-paw.svg" alt="肉球のロゴ" class="logo-mark">
+                <span class="logo-text">
+                    <span class="logo-main">Yuki Studio</span>
+                    <span class="logo-sub">Web &amp; Writing Portfolio</span>
+                </span>
+            </a>
+
+            <button class="menu-toggle" type="button" aria-label="メニューを開く" aria-expanded="false"
+                aria-controls="global-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="global-nav" aria-label="グローバルナビゲーション">
+                <ul class="nav-list">
+                    <li><a href="#home" class="is-current">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#works">Works</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="section contact-section" id="contact">
+            <div class="section-inner">
+                <div class="contact-heading">
+                    <p class="section-label">
+                        <img src="images/logo-paw.svg" alt="" class="section-logo-mark">
+                        CONTACT
+                    </p>
+
+                    <h2>ご相談・お見積りはこちら</h2>
+
+                    <p>
+                        Web制作や記事執筆、サイト運用など、お気軽にご相談ください。<br>
+                        内容を確認のうえ、2〜3営業日以内にご連絡いたします。
+                    </p>
+                </div>
+
+                <div class="contact-card">
+                    <form class="contact-form" action="https://formspree.io/f/xaqgynwg" method="POST">
+                        <div class="contact-form-field">
+                            <label for="name">
+                                お名前
+                                <span>※必須</span>
+                            </label>
+                            <input type="text" id="name" name="name" placeholder="例）山田 花子" required>
+                        </div>
+
+                        <div class="contact-form-field">
+                            <label for="email">
+                                メールアドレス
+                                <span>※必須</span>
+                            </label>
+                            <input type="email" id="email" name="email" placeholder="例）yuki@example.com" required>
+                        </div>
+
+                        <div class="contact-form-field">
+                            <label for="message">
+                                お問い合わせ内容
+                                <span>※必須</span>
+                            </label>
+                            <textarea id="message" name="message" rows="6" placeholder="ご相談内容やご依頼の概要をご記入ください。"
+                                required></textarea>
+                        </div>
+
+                        <p class="contact-form-note">※ 必須項目をご入力ください</p>
+
+                        <button type="submit" class="button button-primary">
+                            送信する
+                            <span aria-hidden="true">→</span>
+                        </button>
+
+                        <p class="contact-privacy-note">
+                            送信いただいた内容は、お問い合わせ対応以外の目的では使用しません。
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-inner">
+
+            <div class="footer-main">
+                <a href="#home" class="site-logo footer-logo" aria-label="Yuki Studio トップへ">
+                    <img src="images/logo-paw.svg" alt="肉球のロゴ" class="logo-mark">
+                    <span class="logo-text">
+                        <span class="logo-main">Yuki Studio</span>
+                        <span class="logo-sub">Web &amp; Writing Portfolio</span>
+                    </span>
+                </a>
+
+                <nav class="footer-nav" aria-label="フッターナビゲーション">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#works">Works</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer-sns" aria-label="SNS・連絡先">
+                    <a href="#" aria-label="GitHub">
+                        <img src="images/github-repo-icon.webp" alt="GitHub">
+                    </a>
+
+                    <a href="mailto:example@example.com" aria-label="メール">
+                        <img src="images/mail-icon.webp" alt="メール">
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-copy">
+                <p class="copyright">© 2026 Yuki Studio</p>
+            </div>
+
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

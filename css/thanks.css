@@ -1,0 +1,225 @@
+/* =========================
+  Contact
+========================= */
+
+.contact-section,
+.contact-complete-section {
+    position: relative;
+    overflow: hidden;
+    padding-block: 72px;
+    background: linear-gradient(180deg, #fffdf8 0%, #f8f0e6 100%);
+}
+
+.contact-heading {
+    max-width: 680px;
+    margin-inline: auto;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.contact-heading .section-label {
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.contact-heading h1,
+.contact-heading h2 {
+    margin-bottom: 14px;
+    color: var(--color-text);
+    font-family: var(--font-logo);
+    font-size: clamp(1.7rem, 3vw, 2.4rem);
+    line-height: 1.35;
+    letter-spacing: var(--tracking-wide);
+}
+
+.contact-heading p {
+    color: var(--color-text-soft);
+    font-size: 0.92rem;
+    line-height: 1.8;
+}
+
+.contact-card,
+.contact-complete-card {
+    width: min(100%, 640px);
+    margin-inline: auto;
+    padding: 34px 36px;
+    border: 1px solid var(--color-border);
+    border-radius: 18px;
+    background: rgba(255, 253, 248, 0.96);
+    box-shadow: 0 14px 34px rgba(70, 50, 30, 0.08);
+}
+
+
+/* ---------- Form ---------- */
+.contact-form {
+    display: grid;
+    gap: 14px;
+}
+
+.contact-form-field {
+    display: grid;
+    gap: 6px;
+}
+
+.contact-form-field label {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    color: var(--color-text);
+    font-size: 0.9rem;
+    font-weight: 700;
+    line-height: 1.6;
+    letter-spacing: var(--tracking-wide);
+}
+
+.contact-form-field label span {
+    color: var(--color-main);
+    font-size: 0.76rem;
+    font-weight: 700;
+}
+
+.contact-form-field input,
+.contact-form-field textarea {
+    width: 100%;
+    padding: 11px 13px;
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+    background: #fffdf8;
+    color: var(--color-text);
+    font: inherit;
+    font-size: 0.92rem;
+    line-height: 1.7;
+    outline: none;
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background-color 0.2s ease;
+}
+
+.contact-form-field textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.contact-form-field input::placeholder,
+.contact-form-field textarea::placeholder {
+    color: rgba(92, 78, 65, 0.48);
+}
+
+.contact-form-field input:focus,
+.contact-form-field textarea:focus {
+    border-color: var(--color-main);
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(154, 122, 88, 0.14);
+}
+
+.contact-form-note,
+.contact-privacy-note {
+    margin: 0;
+    color: var(--color-text-soft);
+    font-size: 0.8rem;
+    line-height: 1.8;
+}
+
+.contact-form .button {
+    width: min(100%, 280px);
+    min-height: 46px;
+    justify-content: center;
+    margin-top: 6px;
+    margin-inline: auto;
+    border: 0;
+    cursor: pointer;
+}
+
+
+/* ---------- Complete ---------- */
+.contact-complete-card {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+}
+
+.contact-complete-mark {
+    display: grid;
+    place-items: center;
+    width: 72px;
+    height: 72px;
+    margin-bottom: 22px;
+    border: 1px solid var(--color-main);
+    border-radius: 50%;
+    background: #fffdf8;
+    color: var(--color-main);
+    font-size: 2rem;
+    line-height: 1;
+    box-shadow: 0 10px 24px rgba(90, 70, 50, 0.07);
+}
+
+.contact-complete-card h2 {
+    margin-bottom: 14px;
+    color: var(--color-text);
+    font-family: var(--font-logo);
+    font-size: clamp(1.4rem, 2.6vw, 1.9rem);
+    line-height: 1.4;
+    letter-spacing: var(--tracking-wide);
+}
+
+.contact-complete-card p {
+    color: var(--color-text-soft);
+    font-size: 0.9rem;
+    line-height: 1.9;
+}
+
+.contact-complete-card p + p {
+    margin-top: 8px;
+}
+
+.contact-complete-actions {
+    display: grid;
+    gap: 12px;
+    width: min(100%, 320px);
+    margin-top: 26px;
+    padding-top: 24px;
+    border-top: 1px dashed var(--color-border);
+}
+
+.contact-complete-actions .button {
+    width: 100%;
+    justify-content: center;
+}
+
+
+/* ---------- Responsive ---------- */
+@media (max-width: 767px) {
+    .contact-section,
+    .contact-complete-section {
+        padding-block: 44px;
+    }
+
+    .contact-heading {
+        margin-bottom: 26px;
+    }
+
+    .contact-heading h1,
+    .contact-heading h2 {
+        font-size: 1.7rem;
+    }
+
+    .contact-heading p {
+        font-size: 0.9rem;
+        line-height: 1.85;
+    }
+
+    .contact-card,
+    .contact-complete-card {
+        padding: 26px 20px;
+        border-radius: 16px;
+    }
+
+    .contact-form .button {
+        width: 100%;
+    }
+
+    .contact-complete-actions {
+        width: 100%;
+    }
+}
