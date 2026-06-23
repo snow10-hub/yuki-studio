@@ -569,7 +569,7 @@ h6 {
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 780px) {
     body {
         font-size: 15px;
     }

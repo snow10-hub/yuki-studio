@@ -86,12 +86,9 @@
 
 .about-layout {
     display: grid;
-    /* 💡【大修正】比率を「0.9fr 1.4fr」から「1fr 2.2fr」に変更！
-       左の文字エリアをシュッと引き締め、右のカードエリアをドカンと主役にする */
-    grid-template-columns: 1fr 2.2fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2.2fr);
     align-items: center;
-    gap: 60px;
-    /* 💡左と右の間のすき間を、少しだけ広げて開放感を出す */
+    gap: clamp(var(--space-3xl), 5vw, 80px);
 }
 
 .section-heading {
@@ -99,29 +96,30 @@
 }
 
 .section-text {
+    position: relative;
     z-index: 3;
 }
 
 .section-heading .button {
     position: relative;
     z-index: 2;
-    margin-top: 28px;
+    margin-top: var(--space-lg);
 }
 
 .about-dog {
-    z-index: 1;
-    pointer-events: none;
     position: absolute;
-    bottom: -20px;
-    right: -40px;
-    width: 180px;
+    right: calc(var(--space-xl) * -1);
+    bottom: calc(var(--space-lg) * -1);
+    z-index: 1;
+    width: clamp(140px, 14vw, 180px);
     margin: 0;
+    pointer-events: none;
 }
 
 .service-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: var(--card-gap);
+    gap: var(--space-sm);
 }
 
 .service-card {
@@ -478,32 +476,21 @@
 
 @media (max-width: 1024px) {
 
-    /* 1. 左右の横並びをやめて、上下2段に切り替える */
     .about-layout {
         grid-template-columns: 1fr;
-        gap: 60px;
-        /* 💡下のカードエリアとの間に、サモエドがひょっこりする空間を開ける */
     }
 
-    /* 2. 【最重要】文章の間延びを完全に防ぐブロック */
     .section-heading {
-        max-width: 400px;
-        /* 💡テキストが一番美しく見える横幅にガツンと制限！ */
+        max-width: 500px;
         margin: 0 auto;
-        /* 💡制限したブロックを画面の「真ん中」に上品に寄せる */
         width: 100%;
     }
 
-    /* 3. サモエドの位置をボタンの右下にガチッと永住させる */
     .about-dog {
         right: auto;
-        /* PC版の右基準を一度チャラにする（超重要） */
         right: 10px;
-        /* 💡ボタン（相談する）のすぐ右横に位置を固定！ */
         bottom: -12px;
-        /* 💡命令：ボタンの右下までグッと沈んでひょっこりしなさい */
         width: 160px;
-        /* タブレット・スマホの画面に合わせて少しだけ小ぶりに */
     }
 
     .skill-groups {
@@ -538,52 +525,56 @@
 
 }
 
-@media (max-width: 767px) {
+@media (max-width: 780px) {
     .hero {
         background:
             url("../images/hero-dog-sp.webp") center center / cover no-repeat;
     }
 
-    .hero-inner {
-        width: min(100%, calc(var(--container-width) + var(--page-padding-sp) * 2));
-        padding-inline: var(--page-padding-sp);
-    }
-
-    .section-heading {
-        max-width: 360px;
-        margin-inline: auto;
-    }
-
     .about-layout {
-        gap: 60px;
-    }
-
-    .about-dog {
-        width: 150px;
-        margin-top: 24px;
+        grid-template-columns: 1fr;
     }
 
     .service-list {
         grid-template-columns: 1fr;
-        gap: 20px;
+        gap: clamp(var(--space-sm), 3vw, var(--grid-gap));
     }
 
     .service-card {
-        padding: 24px;
-        max-width: 360px;
-        margin-inline: auto;
+        display: grid;
+        grid-template-columns: 64px 1fr;
+        column-gap: var(--space-md);
+        row-gap: var(--space-xs);
+        align-items: center;
+        padding: var(--space-lg);
+        text-align: left;
     }
 
-
     .service-icon {
+        grid-row: 1 / 3;
+        grid-column: 1;
         width: 64px;
         height: 64px;
-        margin-bottom: 20px;
+        margin: 0;
     }
 
     .service-icon img {
         width: 28px;
         height: 28px;
+    }
+
+    .service-card h3 {
+        grid-column: 2;
+        margin-bottom: 0;
+        font-size: var(--text-md);
+        line-height: 1.5;
+    }
+
+    .service-card p {
+        grid-column: 2;
+        font-size: var(--text-sm);
+        line-height: 1.7;
+        text-align: left;
     }
 
     .works-list {
