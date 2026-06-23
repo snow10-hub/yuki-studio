@@ -459,7 +459,7 @@ h6 {
     display: flex;
     align-items: center;
     gap: clamp(var(--space-lg), 5vw, 40px);
-    padding: var(--space-xl) 100px;
+    padding: var(--space-xl) 50px;
     border-radius: var(--radius-lg);
     background: var(--color-bg-soft);
 }
@@ -528,7 +528,7 @@ h6 {
 
     .contact-dog {
         justify-self: center;
-        width: 120px;
+        width: 110px;
     }
 
     .contact-content {
@@ -544,7 +544,7 @@ h6 {
 
     .contact-action .button {
         width: 100%;
-        max-width: 250px;
+        max-width: 210px;
     }
 
     .footer-inner {
