@@ -3,21 +3,19 @@
 ========================= */
 
 .career-hero {
-    padding: 0;
-    margin-bottom: var(--section-space-pc);
-    width: 100vw;
-    margin-left: calc(50% - 50vw);
-    margin-right: calc(50% - 50vw);
     position: relative;
+    width: 100vw;
+    margin-inline: calc(50% - 50vw);
+    margin-bottom: var(--section-space-pc);
 }
 
 .career-hero-inner {
-    width: min(100%, var(--container-width));
-    margin: 0 auto;
     display: flex;
     align-items: center;
+    width: min(100%, calc(var(--container-width) + var(--page-padding-pc) * 2));
     height: 450px;
-    padding: 0 var(--page-padding-tablet);
+    margin-inline: auto;
+    padding-inline: var(--page-padding-pc);
 }
 
 .career-hero-visual {
@@ -41,8 +39,8 @@
 .career-hero-label {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
-    margin-bottom: 18px;
+    gap: var(--space-xs);
+    margin-bottom: calc(var(--space-md) + 2px);
     color: var(--color-main);
     font-size: 0.78rem;
     font-weight: 700;
@@ -52,79 +50,46 @@
 .career-hero-title {
     color: var(--color-text);
     font-family: var(--font-logo);
-    font-size: clamp(2rem, 4vw, 3.5rem);
+    font-size: clamp(var(--text-2xl), 4vw, 3rem);
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: var(--tracking-wide);
 }
 
 .career-hero-lead {
-    margin-top: 24px;
+    margin-top: var(--space-lg);
     color: var(--color-text-soft);
-    font-size: 1.05rem;
+    font-size: var(--text-md);
     line-height: 2;
 }
 
 /* ---------- Layout ---------- */
 .career-section {
-    padding-top: 40px;
+    padding-top: calc(var(--space-xl) + var(--space-xs));
 }
 
 .career-layout {
     display: grid;
     grid-template-columns: minmax(0, 1fr) 350px;
-    gap: 24px;
+    gap: var(--grid-gap);
     align-items: start;
 }
 
 .career-main {
     position: relative;
     display: grid;
-    gap: 24px;
+    gap: var(--grid-gap);
 }
 
 .career-main::before {
     content: "";
     position: absolute;
     top: 0;
-    left: 24px;
-    /* .career-numberの中心（丸の幅48pxの半分）に合わせる */
+    left: var(--space-lg);
     bottom: 0;
+    z-index: 0;
     width: 1px;
     background-color: var(--color-border);
-    /* 線の色 */
-    z-index: 0;
-    /* 数字より後ろに配置 */
-}
-
-.career-main::after {
-
-    content: "";
-
-    position: absolute;
-
-    top: 50px;
-
-    /* left: 10px; */
-
-    width: 60px;
-
-    height: calc(100% - 100px);
-
-    background-image: url("../images/paw-trail.webp");
-
-    background-repeat: repeat-y;
-
-    background-size: 70px 500px;
-
-    background-position: center top;
-
-    opacity: 0.1;
-
-    pointer-events: none;
-
-    z-index: 0;
-
 }
 
 /* ---------- Career Cards ---------- */
@@ -132,51 +97,36 @@
     position: relative;
     display: grid;
     grid-template-columns: 56px minmax(0, 1fr);
-    gap: 10px;
+    gap: var(--space-sm);
+    padding: var(--space-sm);
 }
 
 .career-number {
+    z-index: 3;
     display: grid;
     place-items: center;
-    width: 48px;
-    height: 48px;
+    width: var(--space-2xl);
+    height: var(--space-2xl);
+    border: 2px solid var(--color-border);
     border-radius: 50%;
     background: var(--color-bg-soft);
-    border: 2px solid var(--color-border);
     color: var(--color-main);
     font-weight: 600;
     letter-spacing: var(--tracking-wide);
-    z-index: 3;
 }
 
 .career-card-inner {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 24px;
-    padding: 32px;
+    gap: var(--space-lg);
+    padding: var(--space-xl);
     border: 1px solid var(--color-border);
     border-radius: var(--radius-md);
     background: rgba(255, 253, 248, 0.82);
     box-shadow: var(--shadow-card);
 }
 
-.career-icon {
-    display: grid;
-    place-items: center;
-    width: 72px;
-    height: 72px;
-    border-radius: 50%;
-    background: var(--color-bg-soft);
-}
-
-.career-icon img {
-    width: 34px;
-    height: 34px;
-    object-fit: contain;
-}
-
 .career-content h2 {
-    margin-bottom: 16px;
+    margin-bottom: var(--space-md);
     color: var(--color-text);
     font-size: 1.4rem;
     line-height: 1.5;
@@ -190,10 +140,6 @@
     letter-spacing: var(--tracking-wide);
 }
 
-.career-content p+p {
-    margin-top: 24px;
-}
-
 /* =========================
   Career Result Blocks
 ========================= */
@@ -204,11 +150,11 @@
     opacity: 0.6;
 }
 
-
 .career-badge {
     display: inline-flex;
     align-items: center;
     width: fit-content;
+    gap: var(--space-xs);
     margin-top: var(--space-sm);
     margin-bottom: var(--space-xl);
     padding: 6px 14px;
@@ -217,7 +163,6 @@
     color: var(--color-main-dark);
     font-size: var(--text-xs);
     letter-spacing: var(--tracking-wide);
-    gap: 8px;
 }
 
 .career-summary {
@@ -231,12 +176,15 @@
 .career-achievements h3 {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: var(--space-xs);
     margin-bottom: var(--space-sm);
-    color: var(--color-main-dark);
-    font-size: var(--text-sm);
     font-weight: 700;
     letter-spacing: var(--tracking-wide);
+}
+
+.career-summary h3 {
+    color: var(--color-main-dark);
+    font-size: var(--text-sm);
 }
 
 .career-summary p {
@@ -252,13 +200,9 @@
 }
 
 .career-achievements h3 {
-    display: flex;
-    align-items: center;
-    gap: var(--space-xs);
     margin-bottom: var(--space-lg);
     color: var(--color-text);
     font-size: var(--text-md);
-    font-weight: 700;
 }
 
 .career-achievement-list {
@@ -293,16 +237,15 @@
 .career-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
-    margin-top: 18px;
+    gap: var(--space-xs);
+    margin-top: calc(var(--space-md) + 2px);
 }
 
-.career-tags span,
-.skill-tags span {
+.career-tags span {
     display: inline-flex;
     align-items: center;
     min-height: 30px;
-    padding: 4px 12px;
+    padding: 4px var(--space-sm);
     border: 1px solid var(--color-border);
     border-radius: var(--radius-pill);
     background: rgba(245, 238, 228, 0.7);
@@ -314,13 +257,13 @@
 /* ---------- Side ---------- */
 .career-side {
     position: sticky;
-    top: 112px;
+    top: calc(var(--header-height) + var(--space-xl));
     display: grid;
-    gap: 24px;
+    gap: var(--space-lg);
 }
 
 .side-card {
-    padding: 32px;
+    padding: var(--space-xl);
     border: 1px solid var(--color-border);
     border-radius: var(--radius-md);
     background: rgba(255, 253, 248, 0.82);
@@ -328,23 +271,23 @@
 }
 
 .side-card h2 {
-    margin-bottom: 16px;
+    margin-bottom: var(--space-md);
     color: var(--color-text);
     font-size: 1.4rem;
     line-height: 1.6;
 }
 
 .side-card h3 {
-    margin-top: 24px;
-    margin-bottom: 8px;
+    margin-top: var(--space-lg);
+    margin-bottom: var(--space-xs);
     color: var(--color-text);
-    font-size: 1rem;
-    font-weight: 500px;
+    font-size: var(--text-base);
+    font-weight: 500;
 }
 
 .check-list {
     display: grid;
-    gap: 20px;
+    gap: var(--block-space);
 }
 
 .check-list li {
@@ -363,119 +306,54 @@
     font-weight: 700;
 }
 
-.skill-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-}
-
 .side-dog {
     width: 180px;
-    margin: 0 auto;
+    margin-inline: auto;
 }
 
-
-/* 詳細ブロック全体の設定 */
+/* ---------- Career Details ---------- */
 .career-details {
     display: grid;
-    gap: 16px;
-    /* 行間の隙間 */
-    margin-top: 24px;
+    gap: var(--space-md);
+    margin-top: var(--space-lg);
 }
 
-/* 各行の設定 */
 .career-detail-row {
     display: flex;
     align-items: center;
-    /* アイコンとテキストを上揃えに */
     gap: var(--space-xl);
-    padding: 16px;
+    padding: var(--space-md);
+    border-radius: var(--radius-sm);
     background: rgba(245, 240, 230, 0.5);
-    /* 画像のような薄いベージュ背景 */
-    border-radius: 8px;
 }
 
-.career-detail-label svg {
-    width: 18px;
-    height: 18px;
-    flex-shrink: 0;
-}
-
-/* ラベル部分（アイコン＋文字）の設定 */
 .career-detail-label {
     display: flex;
     align-items: center;
-    gap: 8px;
-    min-width: 160px;
-    /* 必要に応じて調整 */
-    font-weight: 700;
-    color: var(--color-text);
     flex-shrink: 0;
+    gap: var(--space-xs);
+    min-width: 160px;
+    color: var(--color-text);
+    font-weight: 700;
 }
 
-/* アイコン用のスタイル */
-.row-icon {
-    width: 20px;
-    height: 20px;
-    object-fit: contain;
+.career-detail-label svg {
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
 }
 
-.career-details .career-detail-row .career-detail-text {
-    margin: 0;
-}
-
-/* テキストの設定 */
 .career-detail-text {
+    margin: 0;
     color: var(--color-text-soft);
     font-size: var(--text-xs);
     line-height: 1.6;
 }
 
-
-/* ---------- Contact ---------- */
-.career-contact {
-    padding: 24px var(--page-padding-pc) 80px;
-}
-
-.career-contact .contact-pill {
-    display: flex;
-    align-items: center;
-    gap: 32px;
-    padding: 28px 48px;
-    border-radius: var(--radius-lg);
-    background: var(--color-bg-soft);
-}
-
-.career-contact .contact-dog {
-    width: 150px;
-    flex-shrink: 0;
-}
-
-.career-contact .contact-text {
-    flex: 1;
-}
-
-.career-contact .contact-text h2 {
-    margin-bottom: 8px;
-    color: var(--color-text);
-    font-size: 1.3rem;
-}
-
-.career-contact .contact-text p {
-    color: var(--color-text-soft);
-    line-height: 1.8;
-}
-
-.career-contact .contact-action {
-    flex-shrink: 0;
-}
-
-
 /* ---------- Responsive ---------- */
 @media (max-width: 1024px) {
-    .career-hero {
-        padding-left: var(--page-padding-tablet);
-        padding-right: var(--page-padding-tablet);
+    .career-hero-inner {
+        padding-inline: var(--page-padding-tablet);
     }
 
     .career-layout {
@@ -484,169 +362,11 @@
 
     .career-side {
         position: static;
-
-        display: block;
-
-        width: 100%;
-        margin-top: var(--section-space-pc);
+        margin-top: var(--space-2xl);
     }
 
     .side-dog {
         display: none;
-    }
-
-    .career-contact {
-        padding-left: var(--page-padding-tablet);
-        padding-right: var(--page-padding-tablet);
-    }
-}
-
-@media (max-width: 767px) {
-    .career-hero {
-        padding: 0;
-        margin-bottom: var(--section-space-sp);
-    }
-
-    .career-hero-inner {
-        height: 450px;
-        padding: 100px var(--page-padding-tablet) 0;
-        align-items: flex-start;
-    }
-
-    .career-hero-content {
-        width: min(300px, 100%);
-    }
-
-    .career-hero-title {
-        font-size: 1.8rem;
-        line-height: 1.35;
-    }
-
-    .career-hero-lead {
-        font-size: 0.9rem;
-        line-height: 1.9;
-        max-width: 330px;
-    }
-
-    .career-hero-label {
-        font-size: 0.72rem;
-        margin-bottom: 14px;
-    }
-
-    .career-number {
-        display: none;
-    }
-
-    .career-card-inner {
-        padding: var(--space-xl) var(--space-lg);
-    }
-
-    .career-content p {
-        font-size: var(--text-xs);
-        line-height: var(--line-height-base);
-    }
-
-    .career-hero-visual img {
-        display: none;
-    }
-
-    .career-hero-visual {
-        background-image: url("../images/hero-dog-career-sp.webp");
-        background-size: cover;
-        background-position: right center;
-    }
-
-    .career-section {
-        padding-top: 32px;
-    }
-
-    .career-card {
-        gap: 8px;
-    }
-
-    .career-main::before,
-    .career-main::after {
-        display: none;
-    }
-
-    .career-card {
-        display: block;
-    }
-
-    .career-number {
-        position: static;
-        width: 44px;
-        height: 44px;
-        margin-bottom: var(--space-md);
-    }
-
-    .career-detail-row {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 8px;
-        padding: 18px 16px;
-    }
-
-    .career-detail-label {
-        min-width: 0;
-    }
-
-    .career-detail-text {
-        font-size: 0.9rem;
-        line-height: 1.8;
-    }
-
-    .career-icon {
-        width: 64px;
-        height: 64px;
-    }
-
-    .career-icon img {
-        width: 30px;
-        height: 30px;
-    }
-
-    .career-content h2 {
-        font-size: 1.2rem;
-    }
-
-    .career-side {
-        grid-template-columns: 1fr;
-    }
-
-
-}
-
-@media (max-width: 1024px) {
-    .career-achievement-list {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 767px) {
-    .career-badge {
-        margin-bottom: var(--space-lg);
-    }
-
-    .career-summary {
-        margin-bottom: var(--space-lg);
-        padding: var(--space-md);
-    }
-
-    .career-summary p {
-        font-size: var(--text-sm);
-        line-height: 1.85;
-    }
-
-}
-
-@media (max-width: 1180px) {
-    .career-layout {
-        grid-template-columns: 1fr;
-    }
-
-    .career-side {
-        position: static;
     }
 
     .career-achievement-list {
@@ -668,5 +388,101 @@
 
     .career-achievement-item:last-child {
         padding-bottom: 0;
+    }
+}
+
+@media (max-width: 780px) {
+    .career-hero {
+        margin-bottom: var(--section-space-sp);
+    }
+
+    .career-hero-inner {
+        align-items: flex-start;
+        padding: 100px var(--page-padding-sp) 0;
+    }
+
+    .career-hero-content {
+        width: min(300px, 100%);
+    }
+
+    .career-hero-label {
+        margin-bottom: calc(var(--space-sm) + 2px);
+        font-size: 0.72rem;
+    }
+
+    .career-hero-title {
+        font-size: 1.8rem;
+        line-height: 1.35;
+    }
+
+    .career-hero-lead {
+        max-width: 330px;
+        font-size: 0.9rem;
+        line-height: 1.9;
+    }
+
+    .career-hero-visual {
+        background-image: url("../images/hero-dog-career-sp.webp");
+        background-size: cover;
+        background-position: right center;
+    }
+
+    .career-hero-visual img {
+        display: none;
+    }
+
+    .career-section {
+        padding-top: var(--space-xl);
+    }
+
+    .career-main::before,
+    .career-main::after {
+        display: none;
+    }
+
+    .career-card {
+        display: block;
+    }
+
+    .career-number {
+        display: none;
+    }
+
+    .career-card-inner {
+        padding: var(--space-xl) var(--space-lg);
+    }
+
+    .career-content h2 {
+        font-size: 1.2rem;
+    }
+
+    .career-detail-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-xs);
+        padding: calc(var(--space-md) + 2px) var(--space-md);
+    }
+
+    .career-detail-label {
+        min-width: 0;
+    }
+
+    .career-detail-text {
+        font-size: var(--text-sm);
+        line-height: 1.8;
+    }
+
+    .career-badge {
+        margin-bottom: var(--space-lg);
+    }
+
+    .career-summary {
+        margin-bottom: var(--space-lg);
+        padding: var(--space-md);
+    }
+
+    .career-summary p {
+        font-size: var(--text-sm);
+        line-height: 1.85;
     }
 }

@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Yuki Studio | Web & Writing Portfolio</title>
-    <meta name="description" content="Yuki Studioは、IT実務経験を土台に、情報設計・文章作成・Web制作・運用まで対応するポートフォリオサイトです。">
+    <title>焦げない台所 | 制作実績 | Yuki Studio</title>
+    <meta name="description" content="Yuki Studioの制作実績「焦げない台所」の詳細ページです。レシピ・コラムサイトの制作背景、情報設計、デザイン、実装の工夫を紹介します。">
 
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/work.css">
@@ -31,7 +31,7 @@
                 <span></span>
             </button>
 
-            <nav class="global-nav" aria-label="グローバルナビゲーション">
+            <nav class="global-nav" id="global-nav" aria-label="グローバルナビゲーション">
                 <ul class="nav-list">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="index.html#about">About</a></li>
@@ -88,7 +88,7 @@
 
                 <article class="work-detail-main">
                     <section class="work-detail-block" id="background">
-                    <!-- 01 -->
+                        <!-- 01 -->
                         <div class="work-section-heading">
                             <span class="work-section-number">01</span>
                             <h2>制作背景・制作目的</h2>
@@ -97,11 +97,11 @@
                         <div class="work-background-layout">
                             <div class="work-background-text">
                                 <p>
-                                    レシピサイトを見ていると、「時短」や「簡単さ」を重視するあまり、料理のおいしさにつながる大事な工程が省かれていると感じることがありました。また、おしゃれな雰囲気と料理中の使いやすさを両立したサイトは、意外と少ないとも感じていました。さらに、スマホで料理をしながら材料を確認するたびに、画面上部まで何度も戻る手間にもストレスを感じていました。
+                                    レシピサイトを日常的に利用する中で、「効率化を重視するあまり、美味しさに関わる重要な工程やコツが省かれていること」や、「デザイン性と調理中の操作性が両立していないこと」に課題を感じていました。特に、スマホで調理しながら材料を確認する際、画面を何度も上下にスクロールする手間は、ユーザー体験（UX）を損なう大きなストレスとなっていました。
                                 </p>
 
                                 <p>
-                                  これらの課題を解決するため、PC版では作り方と材料・コツを横並びで確認できる設計にし、スマホ版ではタブ切り替えによって必要な情報へ移動しやすくしました。さらに印刷対応CSSも用意し、「見ながら作る」という行動に寄り添う情報設計を目指しました。  
+                                    そこで、徹底的に「見ながら作る」という行動に寄り添った、情報の構造化とレイアウトの最適化を目指して本サイトを制作しました。
                                 </p>
                             </div>
                         </div>
@@ -361,7 +361,15 @@
                         <div class="work-card-grid">
                             <section class="work-point-card">
                                 <div class="work-card-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-monitor-smartphone-icon lucide-monitor-smartphone"><path d="M18 8V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h8"/><path d="M10 19v-3.96 3.15"/><path d="M7 19h5"/><rect width="6" height="10" x="16" y="12" rx="2"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-monitor-smartphone-icon lucide-monitor-smartphone">
+                                        <path d="M18 8V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h8" />
+                                        <path d="M10 19v-3.96 3.15" />
+                                        <path d="M7 19h5" />
+                                        <rect width="6" height="10" x="16" y="12" rx="2" />
+                                    </svg>
                                 </div>
                                 <h3>レスポンシブ対応</h3>
                                 <p>
@@ -373,7 +381,14 @@
 
                             <section class="work-point-card">
                                 <div class="work-card-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-printer-icon lucide-printer"><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 9V3a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v6"/><rect x="6" y="14" width="12" height="8" rx="1"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-printer-icon lucide-printer">
+                                        <path
+                                            d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
+                                        <path d="M6 9V3a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v6" />
+                                        <rect x="6" y="14" width="12" height="8" rx="1" />
+                                    </svg>
                                 </div>
                                 <h3>印刷対応CSS</h3>
                                 <p>
@@ -385,7 +400,13 @@
 
                             <section class="work-point-card">
                                 <div class="work-card-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-route-icon lucide-route"><circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-route-icon lucide-route">
+                                        <circle cx="6" cy="19" r="3" />
+                                        <path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15" />
+                                        <circle cx="18" cy="5" r="3" />
+                                    </svg>
                                 </div>
                                 <h3>カテゴリフィルター</h3>
                                 <p>
@@ -404,22 +425,11 @@
                         <div class="work-background-layout">
                             <div class="work-background-text">
                                 <p>
-                                    これまでの業務では、IT領域での要件整理・進行補助・課題管理・業務改善などに携わってきました。
+                                    これまでIT実務で培ってきた「要件定義・課題管理・業務改善」の経験を、本プロダクトの設計プロセスにそのまま注入しています。
                                 </p>
 
                                 <p>
-                                    今回の制作でも、単に画面を作るだけではなく、
-                                    「誰が、どの場面で、どの情報を必要とするか」を考えながら設計しています。
-                                </p>
-
-                                <p>
-                                    PCとスマホで情報の見せ方を変えた点や、印刷対応を入れた点は、
-                                    これまでの業務で培った情報整理力や利用者視点とつながっています。
-                                </p>
-
-                                <p>
-                                    また、WordPress運用やライティング経験を活かし、
-                                    レシピだけでなくコラムも含めたコンテンツ設計を行いました。
+                                    単に画面を実装するだけでなく、「誰が・どの場面で・どの情報を必要とするか」を徹底的に逆算して設計を行いました。
                                 </p>
 
                                 <div class="work-skill-tags">
@@ -439,7 +449,7 @@
                     <!-- 07 -->
                     <section class="work-detail-block" id="improvement">
                         <div class="work-section-heading">
-                            <span class="work-section-number">07</span>
+                            <span class="work-section-number">08</span>
                             <h2>今後改善したい点</h2>
                         </div>
 
@@ -468,7 +478,7 @@
                             Works一覧へ戻る
                         </a>
 
-                        <a href="experience.html" class="button button-primary">
+                        <a href="career.html" class="button button-primary">
                             経歴ページを見る
                             <span aria-hidden="true">→</span>
                         </a>
@@ -488,7 +498,7 @@
                         <a href="#overview">
                             <span>02</span>
                             制作概要
-                        </a>   
+                        </a>
 
                         <a href="#information-design">
                             <span>03</span>
@@ -556,7 +566,7 @@
         <div class="footer-inner">
 
             <div class="footer-main">
-                <a href="#home" class="site-logo footer-logo" aria-label="Yuki Studio トップへ">
+                <a href="index.html" class="site-logo footer-logo" aria-label="Yuki Studio トップへ">
                     <img src="images/logo-paw.svg" alt="肉球のロゴ" class="logo-mark">
                     <span class="logo-text">
                         <span class="logo-main">Yuki Studio</span>
@@ -576,11 +586,11 @@
                 </nav>
 
                 <div class="footer-sns" aria-label="SNS・連絡先">
-                    <a href="#" aria-label="GitHub">
+                    <a href="https://github.com/snow10-hub" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
                         <img src="images/github-repo-icon.webp" alt="GitHub">
                     </a>
 
-                    <a href="mailto:example@example.com" aria-label="メール">
+                    <a href="contact.html" aria-label="メール">
                         <img src="images/mail-icon.webp" alt="メール">
                     </a>
                 </div>
