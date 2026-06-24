@@ -71,13 +71,6 @@
     text-decoration: none;
 }
 
-.scroll-icon,
-.scroll-link .section-logo-mark {
-    width: 18px;
-    height: 18px;
-    object-fit: contain;
-}
-
 /* =========================
   About
 ========================= */
@@ -445,7 +438,6 @@
     font-size: 0.8rem;
 }
 
-
 @media (max-width: 1024px) {
 
     .about-layout {
@@ -500,6 +492,10 @@
 }
 
 @media (max-width: 780px) {
+    .scroll-link {
+        display: none;
+    }
+
     .hero {
         background:
             url("../images/hero-dog-sp.webp") center center / cover no-repeat;
@@ -591,23 +587,36 @@
     }
 
     .experience-card {
+        flex-direction: column;
+        align-items: center;
         gap: var(--space-lg);
+        text-align: center;
+        padding: var(--space-xl) var(--space-lg);
     }
 
     .experience-icon-wrap {
-        width: 70px;
-        height: 70px;
+        width: 56px;
+        height: 56px;
     }
 
     .experience-icon {
-        width: 40px;
-        height: 40px;
+        width: 32px;
+        height: 32px;
+    }
+
+    .experience-body {
+        width: 100%;
     }
 
     .experience-body p {
+        font-size: var(--text-sm);
         font-weight: 500;
         line-height: 1.9;
         letter-spacing: 0.02em;
+    }
+
+    .experience-tags {
+        justify-content: center;
     }
 
 }

@@ -1,8 +1,4 @@
 /* =========================
-  Experience Page
-========================= */
-
-/* =========================
   Career Hero
 ========================= */
 
@@ -76,7 +72,7 @@
 
 .career-layout {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 400px;
+    grid-template-columns: minmax(0, 1fr) 350px;
     gap: 24px;
     align-items: start;
 }
@@ -187,14 +183,111 @@
 }
 
 .career-content p {
+    max-width: 46rem;
     color: var(--color-text-soft);
-    font-size: 0.95rem;
+    font-size: var(--text-sm);
     line-height: 1.8;
     letter-spacing: var(--tracking-wide);
 }
 
 .career-content p+p {
     margin-top: 24px;
+}
+
+/* =========================
+  Career Result Blocks
+========================= */
+
+.career-badge svg,
+.career-summary h3 svg,
+.career-detail-label svg {
+    opacity: 0.6;
+}
+
+
+.career-badge {
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    margin-top: var(--space-sm);
+    margin-bottom: var(--space-xl);
+    padding: 6px 14px;
+    border-radius: var(--radius-pill);
+    background: var(--color-bg-soft);
+    color: var(--color-main-dark);
+    font-size: var(--text-xs);
+    letter-spacing: var(--tracking-wide);
+    gap: 8px;
+}
+
+.career-summary {
+    margin-bottom: var(--space-xl);
+    padding: var(--space-lg);
+    border-radius: var(--radius-sm);
+    background: var(--color-bg);
+}
+
+.career-summary h3,
+.career-achievements h3 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: var(--space-sm);
+    color: var(--color-main-dark);
+    font-size: var(--text-sm);
+    font-weight: 700;
+    letter-spacing: var(--tracking-wide);
+}
+
+.career-summary p {
+    margin-bottom: 0;
+    color: var(--color-text-soft);
+    font-size: 0.95rem;
+    font-weight: 400;
+    line-height: 1.9;
+}
+
+.career-achievements {
+    margin-bottom: var(--space-xl);
+}
+
+.career-achievements h3 {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    margin-bottom: var(--space-lg);
+    color: var(--color-text);
+    font-size: var(--text-md);
+    font-weight: 700;
+}
+
+.career-achievement-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.career-achievement-item {
+    padding-inline: var(--space-lg);
+}
+
+.career-achievement-item:not(:first-child) {
+    border-left: 1px solid var(--color-border);
+}
+
+.career-achievement-item h4 {
+    margin-bottom: var(--space-sm);
+    color: var(--color-text);
+    font-size: 0.95rem;
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+.career-achievement-item p {
+    margin: 0;
+    color: var(--color-text-soft);
+    font-size: var(--text-sm);
+    font-weight: 400;
+    line-height: 1.8;
 }
 
 .career-tags {
@@ -285,7 +378,7 @@
 /* 詳細ブロック全体の設定 */
 .career-details {
     display: grid;
-    gap: 24px;
+    gap: 16px;
     /* 行間の隙間 */
     margin-top: 24px;
 }
@@ -295,11 +388,17 @@
     display: flex;
     align-items: center;
     /* アイコンとテキストを上揃えに */
-    gap: 10px;
+    gap: var(--space-xl);
     padding: 16px;
     background: rgba(245, 240, 230, 0.5);
     /* 画像のような薄いベージュ背景 */
     border-radius: 8px;
+}
+
+.career-detail-label svg {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
 }
 
 /* ラベル部分（アイコン＋文字）の設定 */
@@ -328,7 +427,7 @@
 /* テキストの設定 */
 .career-detail-text {
     color: var(--color-text-soft);
-    font-size: 0.95rem;
+    font-size: var(--text-xs);
     line-height: 1.6;
 }
 
@@ -425,18 +524,26 @@
 
     .career-hero-lead {
         font-size: 0.9rem;
-
         line-height: 1.9;
-
         max-width: 330px;
     }
 
     .career-hero-label {
-
         font-size: 0.72rem;
-
         margin-bottom: 14px;
+    }
 
+    .career-number {
+        display: none;
+    }
+
+    .career-card-inner {
+        padding: var(--space-xl) var(--space-lg);
+    }
+
+    .career-content p {
+        font-size: var(--text-xs);
+        line-height: var(--line-height-base);
     }
 
     .career-hero-visual img {
@@ -444,7 +551,7 @@
     }
 
     .career-hero-visual {
-        background-image: url("../images/hero-dog-sp.webp");
+        background-image: url("../images/hero-dog-career-sp.webp");
         background-size: cover;
         background-position: right center;
     }
@@ -454,36 +561,23 @@
     }
 
     .career-card {
-        /* grid-template-columns: 1fr; */
         gap: 8px;
     }
 
+    .career-main::before,
+    .career-main::after {
+        display: none;
+    }
+
+    .career-card {
+        display: block;
+    }
+
     .career-number {
+        position: static;
         width: 44px;
         height: 44px;
-    }
-
-    .career-main::before {
-
-        display: none;
-
-    }
-
-    .career-main::after {
-
-        left: 18px;
-
-        width: 24px;
-
-        top: 60px;
-
-        bottom: 160px;
-        background-image: url("../images/paw-trail-sp.webp");
-
-        background-size: 50px 600px;
-
-        opacity: 0.2;
-
+        margin-bottom: var(--space-md);
     }
 
     .career-detail-row {
@@ -521,4 +615,58 @@
     }
 
 
+}
+
+@media (max-width: 1024px) {
+    .career-achievement-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 767px) {
+    .career-badge {
+        margin-bottom: var(--space-lg);
+    }
+
+    .career-summary {
+        margin-bottom: var(--space-lg);
+        padding: var(--space-md);
+    }
+
+    .career-summary p {
+        font-size: var(--text-sm);
+        line-height: 1.85;
+    }
+
+}
+
+@media (max-width: 1180px) {
+    .career-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .career-side {
+        position: static;
+    }
+
+    .career-achievement-list {
+        grid-template-columns: 1fr;
+    }
+
+    .career-achievement-item {
+        padding: var(--space-md) 0;
+    }
+
+    .career-achievement-item:not(:first-child) {
+        border-left: 0;
+        border-top: 1px solid var(--color-border);
+    }
+
+    .career-achievement-item:first-child {
+        padding-top: 0;
+    }
+
+    .career-achievement-item:last-child {
+        padding-bottom: 0;
+    }
 }
