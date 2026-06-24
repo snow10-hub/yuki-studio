@@ -49,8 +49,7 @@
 
 .work-detail-hero-visual img {
     width: 100%;
-    aspect-ratio: 16 / 10;
-    object-fit: cover;
+    aspect-ratio: 2 / 1;
 }
 
 
@@ -472,16 +471,6 @@
 
 /* ---------- Tablet ---------- */
 @media (max-width: 1024px) {
-    .work-detail-hero {
-        padding-left: var(--page-padding-tablet);
-        padding-right: var(--page-padding-tablet);
-    }
-
-    .work-detail-hero-inner {
-        grid-template-columns: 1fr;
-        gap: 36px;
-    }
-
     .work-detail-layout {
         grid-template-columns: 1fr;
     }
@@ -500,7 +489,13 @@
 
 
 /* ---------- Mobile ---------- */
-@media (max-width: 767px) {
+@media (max-width: 780px) {
+
+    .work-detail-hero {
+        padding-left: var(--page-padding-tablet);
+        padding-right: var(--page-padding-tablet);
+    }
+
     .work-detail-hero {
         padding: 48px var(--page-padding-sp) 40px;
     }
@@ -524,6 +519,11 @@
         font-size: 2rem;
     }
 
+    .work-detail-hero-inner {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+
     .work-detail-lead {
         grid-row: 3;
         margin: 0;
@@ -537,13 +537,6 @@
 
     .work-detail-actions {
         grid-row: 5;
-        flex-direction: column;
-        gap: 12px;
-        margin-top: 0;
-    }
-
-    .work-detail-actions .button {
-        width: 100%;
     }
 
     .work-detail-section {
@@ -632,14 +625,6 @@
 
     .work-card-grid {
         grid-template-columns: 1fr;
-    }
-
-    .work-detail-bottom-actions {
-        flex-direction: column;
-    }
-
-    .work-detail-bottom-actions .button {
-        width: 100%;
     }
 
     .image-lightbox {
