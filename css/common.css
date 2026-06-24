@@ -79,6 +79,8 @@
     --header-height: 80px;
     --nav-gap: var(--space-xl);
     --header-blur: blur(14px);
+
+    --header-height-sp: 60px;
 }
 
 /* ---------- Reset / Base ---------- */
@@ -192,7 +194,6 @@ h6 {
 }
 
 .section h2 {
-    margin-bottom: var(--block-space);
     color: var(--color-text);
     font-family: var(--font-logo);
     font-size: clamp(1.4rem, 2.5vw, 2.1rem);
@@ -207,10 +208,6 @@ h6 {
     color: var(--color-text-soft);
     font-size: var(--text-sm);
     line-height: 1.9;
-}
-
-.section-text+.section-text {
-    margin-top: var(--space-md);
 }
 
 /* ---------- Buttons / Links ---------- */
@@ -384,9 +381,9 @@ h6 {
 }
 
 /* ---------- Footer ---------- */
-.footer-inner {
-    width: min(100%, var(--container-width));
-    margin-inline: auto;
+
+.site-footer {
+    padding-block: var(--space-2xl) var(--space-lg);
 }
 
 .footer-main {
@@ -473,7 +470,6 @@ h6 {
 }
 
 .contact-dog {
-    flex-shrink: 0;
     width: 90px;
 }
 
@@ -497,7 +493,7 @@ h6 {
 }
 
 .contact-action {
-    flex-shrink: 0;
+    justify-self: end;
 }
 
 /* ---------- Utility ---------- */
@@ -521,13 +517,17 @@ h6 {
     opacity: .8;
 }
 
-/* ---------- Responsive ---------- */
-
 @media (max-width: 1024px) {
+
+    .site-header,
+    .section,
+    .site-footer {
+        padding-inline: var(--page-padding-tablet);
+    }
+
     .contact-pill {
-        display: grid;
         grid-template-columns: 180px 1fr;
-        gap: calc(var(--space-xs));
+        gap: var(--space-xs);
         padding: var(--space-2xl) calc(var(--space-2xl) + var(--space-xs));
     }
 
@@ -551,21 +551,17 @@ h6 {
         max-width: 210px;
     }
 
-    .footer-inner {
-        padding: 0 var(--page-padding-tablet);
-    }
-
     .footer-main {
         flex-direction: column;
         align-items: center;
-        gap: 24px;
+        gap: var(--space-lg);
         text-align: center;
     }
 
     .footer-nav ul {
         justify-content: center;
         flex-wrap: wrap;
-        gap: 14px 22px;
+        gap: var(--space-sm) var(--block-space);
     }
 
     .footer-sns {
@@ -590,21 +586,11 @@ h6 {
 
     .site-header,
     .header-inner {
-        min-height: 60px;
+        min-height: var(--header-height-sp);
     }
 
     .header-inner {
         gap: var(--space-md);
-    }
-
-    .site-logo {
-        gap: var(--space-xs);
-    }
-
-    .logo-mark,
-    .section-logo-mark {
-        width: var(--space-xl);
-        height: var(--space-xl);
     }
 
     .logo-text {
@@ -621,7 +607,6 @@ h6 {
 
     .menu-toggle {
         position: relative;
-        z-index: 1001;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -662,14 +647,14 @@ h6 {
     .global-nav {
         display: block;
         position: fixed;
-        top: calc(60px + var(--space-sm));
+        top: calc(var(--header-height-sp) + var(--space-sm));
         left: var(--page-padding-sp);
         right: var(--page-padding-sp);
         z-index: 1000;
         padding: var(--space-lg);
         border: 1px solid var(--color-border);
         border-radius: var(--radius-md);
-        background: rgba(255, 253, 248, 0.96);
+        background: rgba(255, 253, 248);
         box-shadow: var(--shadow-soft);
         opacity: 0;
         visibility: hidden;
@@ -690,10 +675,6 @@ h6 {
         display: grid;
         width: 100%;
         gap: var(--space-xs);
-    }
-
-    .nav-list li {
-        width: 100%;
     }
 
     .nav-list a {
@@ -717,16 +698,7 @@ h6 {
     }
 
     .site-footer {
-        padding-top: 36px;
-        padding-bottom: var(--space-xl);
-    }
-
-    .footer-inner {
-        padding-inline: var(--page-padding-sp);
-    }
-
-    .footer-main {
-        gap: var(--block-space);
+        padding-block: var(--space-xl);
     }
 
     .footer-logo {
@@ -754,13 +726,21 @@ h6 {
     .contact-pill {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: var(--space-lg);
         padding: var(--space-lg);
         text-align: center;
+    }
+
+    .contact-content {
+        align-items: center;
+    }
+
+    .contact-action {
+        display: flex;
+        justify-content: center;
     }
 
     .contact-dog {
         width: 77px;
     }
-
 }
