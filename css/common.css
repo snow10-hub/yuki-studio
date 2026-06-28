@@ -248,8 +248,8 @@ h6 {
 
 .experience-link .button.button-primary {
     background: var(--color-surface);
-    color: var(--color-main-dark);
-    border-color: var(--color-border);
+    color: var(--color-main);
+    border-color: var(--main-dark);
     box-shadow: none;
 }
 
