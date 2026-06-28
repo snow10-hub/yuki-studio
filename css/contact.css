@@ -193,10 +193,9 @@
     justify-content: center;
 }
 
-
 /* ---------- Responsive ---------- */
 
-@media (max-width: 767px) {
+@media (max-width: 780px) {
     .contact-section,
     .contact-complete-section {
         padding-block: 44px;

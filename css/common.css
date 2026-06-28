@@ -246,15 +246,22 @@ h6 {
     background: var(--color-main);
 }
 
-.button-outline {
-    border-color: var(--color-text-light);
+.experience-link .button.button-primary {
     background: var(--color-surface);
     color: var(--color-main-dark);
+    border-color: var(--color-border);
+    box-shadow: none;
 }
 
-.button-outline:hover {
+.experience-link .button.button-primary:hover {
+    background: var(--color-bg-soft);
+    color: var(--color-main-dark);
     border-color: var(--color-main);
-    background: var(--color-surface);
+}
+
+.about-section .experience-link {
+    display: inline-flex;
+    margin-top: var(--space-lg);
 }
 
 .text-link {
@@ -461,12 +468,12 @@ h6 {
 /* ---------- Contact ---------- */
 .contact-pill {
     display: grid;
-    grid-template-columns: auto minmax(0, 1fr) auto;
+    grid-template-columns: auto minmax(0, 520px) auto;
     align-items: center;
     column-gap: var(--space-2xl);
     border-radius: var(--radius-lg);
     background: var(--color-bg-soft);
-    padding: var(--space-xl);
+    padding: var(--space-lg) calc(var(--space-3xl) + var(--space-3xl));
 }
 
 .contact-dog {
