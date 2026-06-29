@@ -140,10 +140,6 @@
     letter-spacing: var(--tracking-wide);
 }
 
-.career-content p + p {
-    margin-top: var(--space-md);
-}
-
 /* =========================
   Career Result Blocks
 ========================= */
@@ -425,7 +421,7 @@
         line-height: 1.9;
     }
 
-    .career-hero-visual {
+    .career-hero {
         background: url("../images/hero-dog-career-sp.webp") 66% center / auto 100% no-repeat;
     }
 
