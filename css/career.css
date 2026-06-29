@@ -446,6 +446,7 @@
 
     article.career-card {
         padding: 0;
+        margin-top: var(--space-lg);
     }
 
     .career-number {
