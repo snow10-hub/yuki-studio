@@ -455,7 +455,7 @@
 /* ---------- Mobile ---------- */
 @media (max-width: 780px) {
     .work-detail-hero {
-        padding: var(--space-2xl) var(--page-padding-sp) calc(var(--space-xl) + var(--space-xs));
+        padding: var(--space-2xl) var(--page-padding-sp);
     }
 
     .work-detail-hero-inner {

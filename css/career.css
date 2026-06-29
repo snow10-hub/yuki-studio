@@ -398,7 +398,7 @@
 
     .career-hero-inner {
         align-items: flex-start;
-        padding: 100px var(--page-padding-sp) 0;
+        padding: 90px var(--page-padding-sp) 0;
     }
 
     .career-hero-content {
@@ -416,8 +416,8 @@
     }
 
     .career-hero-lead {
-        max-width: 330px;
-        font-size: 0.9rem;
+        max-width: 15rem;
+        font-size: var(--text-sm);
         line-height: 1.9;
     }
 

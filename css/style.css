@@ -491,6 +491,11 @@
         background: url("../images/hero-dog-sp.webp") center center / cover no-repeat;
     }
 
+    .hero-lead {
+        max-width: 19em;
+        font-size: var(--text-sm);
+    }
+
     .service-list {
         grid-template-columns: 1fr;
         gap: clamp(var(--space-sm), 3vw, var(--grid-gap));
