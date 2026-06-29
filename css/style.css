@@ -446,11 +446,11 @@
     .about-dog {
         bottom: calc(var(--space-sm) * -1);
         width: 160px;
-        right: 30px;
+        right: 10px;
     }
 
     .section-heading .button.button-primary {
-        margin-left: 30px;
+        margin-left: 10px;
     }
 
     .work-image-text p {
@@ -489,10 +489,6 @@
 @media (max-width: 780px) {
     .scroll-link {
         display: none;
-    }
-
-    .hero {
-        background: url("../images/hero-dog-sp.webp") 60% center / auto 100% no-repeat;
     }
 
     .hero-lead {
@@ -600,5 +596,11 @@
 
     .experience-tags {
         justify-content: center;
+    }
+}
+
+@media (max-width: 635px) {
+    .hero {
+        background: url("../images/hero-dog-sp.webp") 65% center / auto 100% no-repeat;
     }
 }

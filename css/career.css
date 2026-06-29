@@ -369,6 +369,10 @@
         display: none;
     }
 
+    h3 {
+        margin-top: var(--space-md)
+    }
+
     .career-achievement-list {
         grid-template-columns: 1fr;
     }
@@ -402,31 +406,12 @@
     }
 
     .career-hero-content {
-        width: min(300px, 100%);
+        width: min(350px, 100%);
     }
 
-    .career-hero-label {
+    .career-achievements h3 {
+        margin-top: var(--space-xl);
         margin-bottom: var(--space-sm);
-        font-size: 0.72rem;
-    }
-
-    .career-hero-title {
-        font-size: 1.8rem;
-        line-height: 1.35;
-    }
-
-    .career-hero-lead {
-        max-width: 17rem;
-        font-size: var(--text-sm);
-        line-height: 1.9;
-    }
-
-    .career-hero {
-        background: url("../images/hero-dog-career-sp.webp") 66% center / auto 100% no-repeat;
-    }
-
-    .career-hero-visual img {
-        display: none;
     }
 
     .career-section {
@@ -487,5 +472,31 @@
     .career-summary p {
         font-size: var(--text-sm);
         line-height: 1.85;
+    }
+}
+
+@media (max-width: 550px) {
+    .career-hero {
+        background: url("../images/hero-dog-career-sp.webp") 100% center / auto 100% no-repeat;
+    }
+
+    .career-hero-visual img {
+        display: none;
+    }
+
+    .career-hero-label {
+        margin-bottom: var(--space-sm);
+        font-size: 0.72rem;
+    }
+
+    .career-hero-title {
+        font-size: 1.8rem;
+        line-height: 1.35;
+    }
+
+    .career-hero-lead {
+        max-width: 14rem;
+        font-size: var(--text-sm);
+        line-height: 1.9;
     }
 }
