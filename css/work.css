@@ -494,7 +494,7 @@
     }
 
     .work-detail-block {
-        padding: var(--card-padding) var(--block-space);
+        padding: 0;
     }
 
     .work-section-heading {
@@ -531,7 +531,7 @@
     }
 
     .work-background-layout {
-        gap: var(--space-lg);
+        padding: var(--space-xl) var(--space-lg);
     }
 
     .work-background-image img {

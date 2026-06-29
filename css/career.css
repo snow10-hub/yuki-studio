@@ -444,12 +444,16 @@
         display: block;
     }
 
+    article.career-card {
+        padding: 0;
+    }
+
     .career-number {
         display: none;
     }
 
     .career-card-inner {
-        padding: var(--space-xl) var(--space-lg);
+        padding: var(--space-xl);
     }
 
     .career-content h2 {
