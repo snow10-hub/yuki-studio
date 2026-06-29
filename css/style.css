@@ -444,9 +444,13 @@
     }
 
     .about-dog {
-        right: var(--space-xs);
         bottom: calc(var(--space-sm) * -1);
         width: 160px;
+        right: 30px;
+    }
+
+    .section-heading .button.button-primary {
+        margin-left: 30px;
     }
 
     .work-image-text p {
@@ -488,7 +492,7 @@
     }
 
     .hero {
-        background: url("../images/hero-dog-sp.webp") center center / cover no-repeat;
+        background: url("../images/hero-dog-sp.webp") 60% center / auto 100% no-repeat;
     }
 
     .hero-lead {

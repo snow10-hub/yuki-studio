@@ -79,7 +79,6 @@
     display: flex;
     align-items: center;
     gap: var(--space-md);
-    margin-bottom: var(--card-padding);
 }
 
 .work-section-number {
@@ -98,7 +97,6 @@
 }
 
 .work-section-heading h2 {
-    margin-bottom: 0;
     color: var(--color-text);
     font-size: clamp(var(--text-xl), 3vw, var(--text-2xl));
     line-height: 1.45;
@@ -195,6 +193,12 @@
     display: block;
 }
 
+.work-background-layout,
+.work-card-grid,
+.work-improvement-grid {
+    margin-top: var(--space-lg)
+}
+
 /* ---------- Lightbox ---------- */
 .image-lightbox {
     position: fixed;
@@ -230,7 +234,7 @@
     border: 0;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.9);
-    color: var(--color-text);
+    color: vazr(--color-text);
     font-size: 1.6rem;
     line-height: 1;
     cursor: pointer;
@@ -279,7 +283,7 @@
 #design .work-point-card,
 #implementation .work-point-card {
     position: relative;
-    padding: calc(var(--space-md) + 2px) var(--card-padding);
+    padding: var(--space-md);
     border: 0;
     border-radius: 0;
     background: transparent;
@@ -301,7 +305,7 @@
 #content-design .work-point-card h3,
 #design .work-point-card h3,
 #implementation .work-point-card h3 {
-    margin-bottom: calc(var(--space-md) + 2px);
+    margin-top: (--space-xl);
 }
 
 #content-design .work-point-card p,
@@ -444,7 +448,6 @@
     .work-detail-side {
         position: static;
         order: -1;
-        padding-top: 0;
     }
 }
 
@@ -500,17 +503,13 @@
     .work-section-heading {
         align-items: flex-start;
         gap: var(--space-sm);
-        margin-bottom: var(--space-lg);
+        margin-top: var(--space-xl)
     }
 
     .work-section-number {
         width: 42px;
         height: 42px;
         font-size: 0.8rem;
-    }
-
-    .work-section-heading h2 {
-        font-size: 1.35rem;
     }
 
     .work-detail-block p {
@@ -527,7 +526,7 @@
     }
 
     .work-point-card h3 {
-        font-size: 1.08rem;
+        
     }
 
     .work-background-layout {
