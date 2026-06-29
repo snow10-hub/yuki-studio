@@ -459,7 +459,7 @@
 
     .work-detail-hero-inner {
         grid-template-columns: 1fr;
-        gap: calc(var(--space-xl) + var(--space-xs));
+        gap: var(--space-xl);
     }
 
     .work-detail-hero-content {
@@ -489,6 +489,8 @@
     }
 
     .work-detail-actions {
+        display: flex;
+        justify-content: center;
         grid-row: 5;
     }
 
