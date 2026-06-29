@@ -255,10 +255,6 @@
         inset 0 1px 0 rgba(255, 255, 255, 0.8);
 }
 
-.work-background-text {
-    max-width: 860px;
-}
-
 .work-background-image {
     overflow: hidden;
     width: min(100%, 380px);
@@ -536,7 +532,6 @@
 
     .work-background-layout {
         gap: var(--space-lg);
-        padding: var(--card-padding) var(--space-lg);
     }
 
     .work-background-image img {
@@ -546,7 +541,6 @@
     #information-design .work-point-card {
         grid-template-columns: 1fr;
         gap: var(--space-lg);
-        padding: var(--space-xl) 0;
     }
 
     #information-design .work-card-thumb {
