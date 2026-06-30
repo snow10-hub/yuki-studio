@@ -61,7 +61,7 @@
 .work-detail-layout {
     display: grid;
     grid-template-columns: minmax(0, 1.5fr) 300px;
-    gap: var(--block-space);
+    gap: var(--space-xl);
     align-items: start;
 }
 
