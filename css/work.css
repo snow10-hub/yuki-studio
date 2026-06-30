@@ -71,9 +71,6 @@
 }
 
 /* ---------- Main Blocks ---------- */
-.work-detail-block {
-    padding: var(--card-padding);
-}
 
 .work-section-heading {
     display: flex;
