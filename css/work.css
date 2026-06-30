@@ -43,7 +43,7 @@
 
 .work-detail-hero-visual {
     overflow: hidden;
-    border-radius: var(--radius-lg);
+    border-radius: var(--radius-sm);
     box-shadow: var(--shadow-soft);
 }
 
